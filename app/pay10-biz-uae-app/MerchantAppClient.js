@@ -10,8 +10,21 @@ import { isEmptyHtml } from "../lib/sanitizeHtml";
 
 const firstNonEmptyHtml = (...vals) => vals.find(v => !isEmptyHtml(v)) ?? vals[vals.length - 1];
 
+// Sections are matched by title keyword rather than array position — CMS
+// section order isn't guaranteed, and deleting one section shifts every
+// following index, which used to make unrelated sections swap content.
+const findSection = (sections, keyword) =>
+  sections?.find((s) => (s.title || '').toLowerCase().includes(keyword));
+
 const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLogos = [] }) => {
-  const scaleCards = pageData?.sections?.[0]?.cards?.map((c, i) => {
+  const scaleSection = findSection(pageData?.sections, 'every merchant');
+  const benefitsSection = findSection(pageData?.sections, 'merchants get');
+  const supportSection = findSection(pageData?.sections, 'human support');
+  const commandSection = findSection(pageData?.sections, 'run your payments');
+  const stepsSection = findSection(pageData?.sections, 'simple steps');
+  const finalCtaSection = findSection(pageData?.sections, 'smarter way');
+
+  const scaleCards = scaleSection?.cards?.map((c, i) => {
     const cleanDesc = (c.description || c.content || "").replace(/<[^>]*>?/gm, '').trim();
     return {
       num: `0${i + 1}`,
@@ -54,7 +67,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
       : <Icon icon={cmsIcon} width={28} />;
   };
 
-  const benefitsCards = pageData?.sections?.[1]?.cards?.map((c, i) => ({
+  const benefitsCards = benefitsSection?.cards?.map((c, i) => ({
     num: `0${i + 1}`,
     icon: renderIcon(c.icon, benefitIcons[i % benefitIcons.length]),
     title: c.title,
@@ -91,7 +104,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
     },
   ];
 
-  const commandCards = pageData?.sections?.[3]?.cards?.map((c, i) => ({
+  const commandCards = commandSection?.cards?.map((c, i) => ({
     num: `0${i + 1}`,
     title: c.title,
     desc: c.subtitle || (c.description || c.content || "").replace(/<[^>]*>?/gm, '').trim(),
@@ -102,7 +115,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
     { num: '04', title: 'Link / unlink DQR devices', desc: 'Connect or disconnect your DQR POS machine directly from the app. Full device control in your hands.' },
   ];
 
-  const stepsCards = pageData?.sections?.[4]?.cards?.map((c, i) => ({
+  const stepsCards = stepsSection?.cards?.map((c, i) => ({
     num: `0${i + 1}`,
     title: c.title,
     desc: c.subtitle || (c.description || c.content || "").replace(/<[^>]*>?/gm, '').trim(),
@@ -131,8 +144,8 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
 
       <section className={Style.merchant_scale}>
         <div className={Style.merchant_scale_header}>
-          <h2>{pageData?.sections?.[0]?.title || "Built for every merchant, from first sale to full scale."}</h2>
-          <p>{pageData?.sections?.[0]?.subtitle || "Whether you're a solo trader, a growing SME, or a multi-location enterprise Pay10 UAE Biz App levels the playing field. The same powerful platform. The same unbeatable rates. For everyone."}</p>
+          <h2>{scaleSection?.title || "Built for every merchant, from first sale to full scale."}</h2>
+          <p>{scaleSection?.subtitle || "Whether you're a solo trader, a growing SME, or a multi-location enterprise Pay10 UAE Biz App levels the playing field. The same powerful platform. The same unbeatable rates. For everyone."}</p>
         </div>
         <div className={Style.merchant_scale_cards}>
           {scaleCards.map((card) => (
@@ -148,8 +161,8 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
 
       <section className={Style.biz_benefits}>
         <div className={Style.benefits_left}>
-          <h2>{pageData?.sections?.[1]?.title || "What Pay10 merchants get that others don't."}</h2>
-          <p>{pageData?.sections?.[1]?.subtitle || "Five benefits that change how you run your business and why merchants across the UAE are switching to Pay10."}</p>
+          <h2>{benefitsSection?.title || "What Pay10 merchants get that others don't."}</h2>
+          <p>{benefitsSection?.subtitle || "Five benefits that change how you run your business and why merchants across the UAE are switching to Pay10."}</p>
         </div>
         <div className={Style.benefits_grid}>
           {benefitsCards.map((item) => (
@@ -166,23 +179,23 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
 
       <section className={Style.biz_support}>
         <div className={Style.support_left}>
-          <h2>{pageData?.sections?.[2]?.title || "24/7 human support · multi-language · zero wait time"}</h2>
-          <p className={Style.support_sub}>{pageData?.sections?.[2]?.subtitle || "Call. A human picks up. Every time."}</p>
+          <h2>{supportSection?.title || "24/7 human support · multi-language · zero wait time"}</h2>
+          <p className={Style.support_sub}>{supportSection?.subtitle || "Call. A human picks up. Every time."}</p>
           <div className={Style.support_desc}>
-            {!isEmptyHtml(pageData?.sections?.[2]?.content)
-              ? <div dangerouslySetInnerHTML={{ __html: pageData.sections[2].content }} />
+            {!isEmptyHtml(supportSection?.content)
+              ? <div dangerouslySetInnerHTML={{ __html: supportSection.content }} />
               : <p>In a world of bots and long waits, Pay10 is different. Human support, available 24 hours a day, 7 days a week, 365 days a year, in multiple languages. For every merchant, regardless of size. Call and your call will be picked up. No queues. No bots. No waiting.</p>
             }
           </div>
         </div>
         <div className={Style.support_visual}>
           <div className={Style.circle_outer}>
-            <img src={pageData?.sections?.[2]?.images?.[1] || "/images/support-avatar-1.jpg"} alt="support agent" className={Style.floating_avatar_1} />
+            <img src={supportSection?.images?.[1] || "/images/support-avatar-1.jpg"} alt="support agent" className={Style.floating_avatar_1} />
             <div className={Style.circle_mid}>
-              <img src={pageData?.sections?.[2]?.images?.[2] || "/images/support-avatar-2.jpg"} alt="support agent" className={Style.floating_avatar_2} />
-              <img src={pageData?.sections?.[2]?.images?.[3] || "/images/support-avatar-3.jpg"} alt="support agent" className={Style.floating_avatar_3} />
+              <img src={supportSection?.images?.[2] || "/images/support-avatar-2.jpg"} alt="support agent" className={Style.floating_avatar_2} />
+              <img src={supportSection?.images?.[3] || "/images/support-avatar-3.jpg"} alt="support agent" className={Style.floating_avatar_3} />
               <div className={Style.circle_inner}>
-                <Image src={pageData?.sections?.[2]?.images?.[0] || "/images/prod_imports/customer-executive.jpg"} alt="Pay10 support" width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                <Image src={supportSection?.images?.[0] || "/images/prod_imports/customer-executive.jpg"} alt="Pay10 support" width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
               </div>
             </div>
           </div>
@@ -190,14 +203,14 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
       </section>
 
       <section className={Style.biz_command}>
-        <h2 className={Style.command_heading}>{pageData?.sections?.[3]?.title || "Everything you need to run your payments, in one app."}</h2>
+        <h2 className={Style.command_heading}>{commandSection?.title || "Everything you need to run your payments, in one app."}</h2>
         <div className={Style.command_body}>
           <div className={Style.command_phones}>
-            <Image src={pageData?.sections?.[3]?.images?.[0] || "/images/prod_imports/biz-home-screen.png"} alt="Pay10 Biz App Home" width={280} height={560} className={Style.phone_img_back} />
-            <Image src={pageData?.sections?.[3]?.images?.[1] || "/images/prod_imports/biz-transaction-history.png"} alt="Pay10 Biz App Transactions" width={280} height={560} className={Style.phone_img_front} />
+            <Image src={commandSection?.images?.[0] || "/images/prod_imports/biz-home-screen.png"} alt="Pay10 Biz App Home" width={280} height={560} className={Style.phone_img_back} />
+            <Image src={commandSection?.images?.[1] || "/images/prod_imports/biz-transaction-history.png"} alt="Pay10 Biz App Transactions" width={280} height={560} className={Style.phone_img_front} />
           </div>
           <div className={Style.command_right}>
-            <p className={Style.command_desc}>{pageData?.sections?.[3]?.subtitle || "The Pay10 Biz UAE is your merchant command centre linked directly to your DQR device, giving you real-time visibility and full control from your phone."}</p>
+            <p className={Style.command_desc}>{commandSection?.subtitle || "The Pay10 Biz UAE is your merchant command centre linked directly to your DQR device, giving you real-time visibility and full control from your phone."}</p>
             <div className={Style.command_features}>
               {commandCards.map((f) => (
                 <div key={f.num} className={Style.command_feature}>
@@ -212,8 +225,8 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
 
       <section className={Style.biz_steps}>
         <div className={Style.steps_header}>
-          <h2 className={Style.steps_heading}>{pageData?.sections?.[4]?.title || "Up and running in 5 simple steps."}</h2>
-          <p className={Style.steps_sub}>{pageData?.sections?.[4]?.subtitle || "Getting Pay10 Business Solutions: POS DQR Devices, Pay10 Biz UAE and much more, at your premises is straightforward. Our team handles the heavy lifting. You focus on your business."}</p>
+          <h2 className={Style.steps_heading}>{stepsSection?.title || "Up and running in 5 simple steps."}</h2>
+          <p className={Style.steps_sub}>{stepsSection?.subtitle || "Getting Pay10 Business Solutions: POS DQR Devices, Pay10 Biz UAE and much more, at your premises is straightforward. Our team handles the heavy lifting. You focus on your business."}</p>
         </div>
         <div className={Style.steps_row}>
           {stepsCards.map((step) => (
@@ -236,12 +249,12 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
       <MerchantLogosCTA showCta={false} images={merchantLogos} />
 
       <section className={Style.biz_final_cta}>
-        <h2 className={Style.cta_heading} dangerouslySetInnerHTML={{ __html: pageData?.sections?.[5]?.title || "Ready to accept payments<br />the smarter way?" }} />
+        <h2 className={Style.cta_heading} dangerouslySetInnerHTML={{ __html: finalCtaSection?.title || "Ready to accept payments<br />the smarter way?" }} />
         {(() => {
           // An empty CMS subtitle means "intentionally removed" — don't fall
           // back to the hardcoded default in that case, only when the field
           // is missing entirely (e.g. pageData hasn't loaded).
-          const ctaSubtitle = pageData?.sections?.[5]?.subtitle ?? "Lowest MDRs. Same-day settlement. 24/7 human support. CBUAE licensed. Everything your business deserves, and nothing you don't need.";
+          const ctaSubtitle = finalCtaSection?.subtitle ?? "Lowest MDRs. Same-day settlement. 24/7 human support. CBUAE licensed. Everything your business deserves, and nothing you don't need.";
           return ctaSubtitle && <p className={Style.cta_sub}>{ctaSubtitle}</p>;
         })()}
         <BizLeadForm />
