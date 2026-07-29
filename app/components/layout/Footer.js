@@ -54,8 +54,7 @@ const footerData = {
         { label: 'Terms of Services', href: '/terms-of-service' },
         { label: 'Privacy Policy', href: '/privacy-policy' },
         { label: 'Key Facts Statement', href: '/key-fact-statement' },
-        { label: 'Schedule of Charges', href: '/coming-soon' },
-        { 
+        {
           label: 'FAQ', 
           href: '/faqs',
           subItems: [
@@ -65,26 +64,6 @@ const footerData = {
           ]
         },
         { label: 'Merchant T&Cs', href: '/faq-altareq' },
-      ],
-    },
-    resources: {
-      label: 'Resources',
-      items: [
-        {
-          label: 'Brand Guidelines',
-          href: 'https://pay10.bh/wp-content/uploads/2026/05/Pay10-Ext-Brandguidelines-21-May-2026.pdf',
-          external: true,
-        },
-        {
-          label: 'App & Web Button Guidelines',
-          href: 'https://pay10.bh/wp-content/uploads/2026/06/Product-Approved_2June2026_Pay10-UAE_Button-Designs-April-20-RGB_Including-QR_07.pdf',
-          external: true,
-        },
-        {
-          label: 'DQR Device User Manual',
-          href: '/docs/dqr-device-user-manual.pdf',
-          external: true,
-        },
       ],
     },
     contact: {
@@ -270,57 +249,6 @@ const Footer = () => {
                       </div>
                     )}
                   </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-
-        {/* Resources Column */}
-        <div className="footer__nav-item">
-          {isMobile || isTablet ? (
-            <>
-              <button
-                className="footer__nav-link footer__nav-link--accordion"
-                onClick={() => toggleSection('resources')}
-                aria-expanded={openSections.resources}
-              >
-                <span>{navigation.resources.label}</span>
-                <Icon
-                  icon={openSections.resources ? 'mdi:chevron-up' : 'mdi:chevron-right'}
-                  className="footer__nav-chevron"
-                />
-              </button>
-              {openSections.resources && (
-                <div className="footer__nav-subitems">
-                  {navigation.resources.items.map((item) => (
-                    item.external ? (
-                      <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="footer__nav-sublink">
-                        {item.label}
-                      </a>
-                    ) : (
-                      <Link key={item.label} href={item.href} className="footer__nav-sublink">
-                        {item.label}
-                      </Link>
-                    )
-                  ))}
-                </div>
-              )}
-            </>
-          ) : (
-            <>
-              <div className="footer__nav-heading">{navigation.resources.label}</div>
-              <div className="footer__nav-subitems">
-                {navigation.resources.items.map((item) => (
-                  item.external ? (
-                    <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="footer__nav-sublink">
-                      {item.label}
-                    </a>
-                  ) : (
-                    <Link key={item.label} href={item.href} className="footer__nav-sublink">
-                      {item.label}
-                    </Link>
-                  )
                 ))}
               </div>
             </>
