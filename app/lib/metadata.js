@@ -7,8 +7,8 @@ export const stagingRobots = {
 
 export const defaultMetadata = {
   title: "Pay 10",
-  description: 'Pay 10 UAE is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the UAE.',
-  keywords: 'Best payment gateway in UAE, Payment gateway company in UAE, Best payment gateway services provider in UAE, Payment gateway company, Payment gateways in UAE, Best Payment Gateway, Best Payment Gateway in UAE, Payment Gateways In UAE, Best Payment Gateways',
+  description: 'Pay 10 Bahrain is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the Kingdom of Bahrain.',
+  keywords: 'Best payment gateway in Bahrain, Payment gateway company in Bahrain, Best payment gateway services provider in Bahrain, Payment gateway company, Payment gateways in Bahrain, Best Payment Gateway, Best Payment Gateway in Bahrain, Payment Gateways In Bahrain, Best Payment Gateways',
   robots: stagingRobots,
   alternates: {
     canonical: 'https://pay10.bh',
@@ -18,8 +18,8 @@ export const defaultMetadata = {
     locale: 'en_US',
     url: 'https://pay10.bh',
     siteName: 'Pay 10',
-    title: "Pay 10 - Trusted Payment Partner in UAE",
-    description: 'Pay 10 UAE is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the UAE.',
+    title: "Pay 10 - Trusted Payment Partner in Bahrain",
+    description: 'Pay 10 Bahrain is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the Kingdom of Bahrain.',
     images: [
       {
         url: '',
@@ -31,8 +31,8 @@ export const defaultMetadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Pay 10 - Trusted Payment Partner in UAE",
-    description: 'Pay 10 UAE is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the UAE.',
+    title: "Pay 10 - Trusted Payment Partner in Bahrain",
+    description: 'Pay 10 Bahrain is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the Kingdom of Bahrain.',
     images: [''],
   },
 }
