@@ -59,13 +59,9 @@ const footerData = {
           label: 'FAQ', 
           href: '/faqs',
           subItems: [
-            { label: 'Bill Payment', href: '/faqs?category=Bill+Payment' },
-            { label: 'Card Issuing', href: '/faqs?category=Card+Issuing' },
-            { label: 'Fraud', href: '/faqs?category=Fraud' },
-            { label: 'WPS Employee', href: '/faqs?category=WPS+Employee' },
-            { label: 'Send Abroad', href: '/faqs?category=Send+Abroad' },
-            { label: 'Pay10 UAE', href: '/faqs?category=Pay10+UAE' },
-            { label: 'Pay10 Biz UAE', href: '/faqs?category=Pay10+Biz+UAE' },
+            { label: 'General', href: '/faqs?category=General' },
+            { label: 'Pay10 App', href: '/faqs?category=Pay10+App' },
+            { label: 'Pay10 Biz App', href: '/faqs?category=Pay10+Biz+App' },
           ]
         },
         { label: 'Al Tareq FAQ', href: '/faq-altareq' },
