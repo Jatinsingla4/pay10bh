@@ -8,6 +8,7 @@ export async function generateMetadata({ params }) {
     const res = await fetch(`${API_BASE}/events/${slug}`, {
       next: { revalidate: 60 },
       headers: API_HEADERS,
+      signal: AbortSignal.timeout(15000),
     });
     if (res.ok) {
       const data = await res.json();
@@ -32,6 +33,7 @@ async function getEventData(slug) {
     const res = await fetch(`${API_BASE}/events/${slug}`, {
       next: { revalidate: 60 },
       headers: API_HEADERS,
+      signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) return null;
     const json = await res.json();

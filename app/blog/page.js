@@ -14,6 +14,7 @@ async function getBlogs() {
     const res = await fetch(`${API_BASE}/blogs`, {
       next: { revalidate: 60 },
       headers: API_HEADERS,
+      signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) return [];
     const json = await res.json();

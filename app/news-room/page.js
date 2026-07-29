@@ -12,6 +12,7 @@ async function getNews() {
     const res = await fetch(`${API_BASE}/news`, {
       next: { revalidate: 60 },
       headers: API_HEADERS,
+      signal: AbortSignal.timeout(15000),
     });
 
     if (!res.ok) {

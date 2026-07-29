@@ -12,6 +12,7 @@ async function getEvents() {
     const res = await fetch(`${API_BASE}/events`, {
       next: { revalidate: 60 }, // Revalidate every 60 seconds
       headers: API_HEADERS,
+      signal: AbortSignal.timeout(15000),
     });
     
     if (!res.ok) {

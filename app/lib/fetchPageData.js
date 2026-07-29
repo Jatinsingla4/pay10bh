@@ -11,6 +11,7 @@ export async function fetchPageData(slug) {
     const res = await fetch(`${API_BASE}/pages/${slug}`, {
       next: { revalidate: 0 },
       headers: API_HEADERS,
+      signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) return null;
     return (await res.json())?.data ?? null;
