@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return fetchPageMeta('payment-gateway', {
     title: "Payment Gateway – Pay 10",
     description: "The UAE's most trusted checkout buttons now on your store.",
-    alternates: { canonical: "https://pay10.ae/payment-gateway" },
+    alternates: { canonical: "https://pay10.bh/payment-gateway" },
   });
 }
 

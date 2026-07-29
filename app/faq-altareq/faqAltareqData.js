@@ -32,7 +32,7 @@ const faqAltareqData = [
         question: '3. Why was Open Finance introduced and how is it implemented in the UAE?',
         answer: (
           <p>
-            The Central Bank of the UAE (CBUAE) launched Open Finance to modernise the financial sector and give you more choice and convenience. AlTareq, the name for Open Finance in the UAE, will offer functionality that securely connects all Licensed Financial Institutions and Third-Party Providers/ apps via a central platform. Open Finance will support four key functionalities including data sharing, quote generation, service and transaction initiation, and onboarding to Licensed Financial Institutions. Open Finance is governed by principles that value consumer rights, access to financial data, ease of using services, and enhancing functionality and transparency.
+            The Central Bank of Bahrain (CBB) launched Open Finance to modernise the financial sector and give you more choice and convenience. AlTareq, the name for Open Finance in the UAE, will offer functionality that securely connects all Licensed Financial Institutions and Third-Party Providers/ apps via a central platform. Open Finance will support four key functionalities including data sharing, quote generation, service and transaction initiation, and onboarding to Licensed Financial Institutions. Open Finance is governed by principles that value consumer rights, access to financial data, ease of using services, and enhancing functionality and transparency.
           </p>
         )
       },
@@ -40,9 +40,9 @@ const faqAltareqData = [
         question: '4. Who is involved in Open Finance?',
         answer: (
           <ul>
-            <li><strong>Central Bank of the UAE (CBUAE):</strong> The regulator ensuring the safety, transparency, and fairness of the Open Finance ecosystem.</li>
+            <li><strong>Central Bank of Bahrain (CBB):</strong> The regulator ensuring the safety, transparency, and fairness of the Open Finance ecosystem.</li>
             <li><strong>Nebras:</strong> The operator of the central platform for Open Finance and manager of initiative for the UAE.</li>
-            <li><strong>Licensed Financial Institutions (LFIs):</strong> Banks, insurers, exchange houses, e-wallets, and finance houses licensed by the CBUAE to securely share consented user data with Third-Party Providers.</li>
+            <li><strong>Licensed Financial Institutions (LFIs):</strong> Banks, insurers, exchange houses, e-wallets, and finance houses licensed by the CBB to securely share consented user data with Third-Party Providers.</li>
             <li><strong>Third-Party Providers (TPP):</strong> Regulated providers utilising open finance functionalities to provide new ways to use financial services.</li>
             <li><strong>Users:</strong> Consumers and businesses as end users of AlTareq services who benefit from innovative services provided by regulated TPPs.</li>
           </ul>
@@ -130,7 +130,7 @@ const faqAltareqData = [
         question: '1. Is Open Finance safe?',
         answer: (
           <p>
-            Yes, your safety and privacy are at the heart of Open Finance. Only providers that are licensed and regulated by the CBUAE can access your data, and only with your clear, informed consent. Open Finance is built with world-class levels of protection, using advanced security tools like multi-factor authentication and encryption to ensure your information and the financial services you avail stay private and secure.
+            Yes, your safety and privacy are at the heart of Open Finance. Only providers that are licensed and regulated by the CBB can access your data, and only with your clear, informed consent. Open Finance is built with world-class levels of protection, using advanced security tools like multi-factor authentication and encryption to ensure your information and the financial services you avail stay private and secure.
           </p>
         )
       },
@@ -140,7 +140,7 @@ const faqAltareqData = [
           <div>
             <p>Open Finance uses multiple layers of protection to ensure security:</p>
             <ul>
-              <li><strong>Strict oversight:</strong> All providers are regulated and closely monitored by the CBUAE to ensure they meet the highest standards of security and reliability.</li>
+              <li><strong>Strict oversight:</strong> All providers are regulated and closely monitored by the CBB to ensure they meet the highest standards of security and reliability.</li>
               <li><strong>Your control, always:</strong> You decide who gets access to your data/ services and for how long. You can pause or revoke your consent at any time.</li>
               <li><strong>Strong identity protection:</strong> Multi-factor authentication offers security every time you give consent or initiate services.</li>
               <li><strong>Private by design:</strong> End-to-end encryption ensures your data is protected whenever using AlTareq-based services.</li>
@@ -219,7 +219,7 @@ const faqAltareqData = [
         question: '9. Are there regulations/ legislation that protect users?',
         answer: (
           <p>
-            Yes, the CBUAE Open Finance Regulation establishes a comprehensive framework for the licensing, supervision, and operation of Open Finance in the UAE. It outlines the requirements and license conditions for Open Finance Third-Party Providers, ensuring that only regulated organisations can engage in data sharing and service initiation. For more detailed information, please refer to the Open Finance Regulation.
+            Yes, the CBB Open Finance Regulation establishes a comprehensive framework for the licensing, supervision, and operation of Open Finance in the UAE. It outlines the requirements and license conditions for Open Finance Third-Party Providers, ensuring that only regulated organisations can engage in data sharing and service initiation. For more detailed information, please refer to the Open Finance Regulation.
           </p>
         )
       },
@@ -298,7 +298,7 @@ const faqAltareqData = [
         question: '2. How can I address issues arising from Open Finance-related activities?',
         answer: (
           <p>
-            To address issues encountered with Open Finance-related activities, you should first raise the concern with the relevant LFI or TPP involved. If the LFI or TPP have a resulting issue between each other, this will be reviewed and determined by Nebras and the CBUAE. If your issue is still not resolved by these processes, you can escalate the matter to Sanadak for further assistance.
+            To address issues encountered with Open Finance-related activities, you should first raise the concern with the relevant LFI or TPP involved. If the LFI or TPP have a resulting issue between each other, this will be reviewed and determined by Nebras and the CBB. If your issue is still not resolved by these processes, you can escalate the matter to Sanadak for further assistance.
           </p>
         )
       },
@@ -358,7 +358,7 @@ const faqAltareqData = [
         )
       },
       {
-        question: '3. CBUAE',
+        question: '3. CBB',
         answer: (
           <p>
             Central Bank of the United Arab Emirates, regulator of Open Finance framework.
@@ -369,7 +369,7 @@ const faqAltareqData = [
         question: '4. Licensed Financial Institution (LFI)',
         answer: (
           <p>
-            A bank or financial institution regulated by the Central Bank of the UAE.
+            A bank or financial institution regulated by the Central Bank of Bahrain.
           </p>
         )
       },
@@ -377,7 +377,7 @@ const faqAltareqData = [
         question: '5. Third-Party Provider (TPP)',
         answer: (
           <p>
-            A company regulated by CBUAE to access financial data or initiate services with customer consent.
+            A company regulated by CBB to access financial data or initiate services with customer consent.
           </p>
         )
       },

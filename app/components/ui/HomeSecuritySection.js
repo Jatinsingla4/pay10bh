@@ -85,33 +85,17 @@ const HomeSecuritySection = ({
         )}
 
         <div className={Style.certifications} data-animation="opacity-up" data-anim-delay="250">
-          <h4 style={{ marginBottom: '20px' }}>Certified by</h4>
-          
-          <div className={Style.badgesMarquee} ref={marqueeRef} style={{ width: '100%', maxWidth: '584px', margin: '0 auto', overflow: 'hidden' }}>
-            <div className={Style.badgesTrack} ref={trackRef} style={{ display: 'flex', gap: '24px', willChange: 'transform' }}>
+          <h4>Certified by</h4>
+
+          <div className={Style.badgesMarquee} ref={marqueeRef}>
+            <div className={Style.badgesTrack} ref={trackRef}>
               {/* Duplicate the logos array so we have enough items to slide and reset seamlessly */}
               {[...displayImages, ...displayImages, ...displayImages, ...displayImages, ...displayImages].map((item, index) => (
-                <div 
-                  key={index} 
-                  className={Style.badgeCard} 
-                  style={{ 
-                    display: 'flex', 
-                    justifyContent: 'center', 
-                    alignItems: 'center',
-                    flexShrink: 0,
-                    width: '280px', // Fixed small width to match the design
-                    backgroundColor: '#ffffff',
-                    border: '1px solid #f0f0f0',
-                    borderRadius: '24px',
-                    boxShadow: '0 8px 30px rgba(0, 0, 0, 0.04)',
-                    padding: '30px',
-                    height: '180px'
-                  }}
-                >
+                <div key={index} className={Style.badgeCard}>
                   <img
                     src={item}
-                    alt={`License`}
-                    style={{ height: '100%', width: 'auto', objectFit: 'contain', maxHeight: '100px' }}
+                    alt={`License ${index + 1}`}
+                    className={Style.badgeImage}
                   />
                 </div>
               ))}

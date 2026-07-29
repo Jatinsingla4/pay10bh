@@ -7,7 +7,7 @@ import JourneySection from './components/ui/blocks/JourneySection';
 import FeatureBlock from './components/ui/FeatureBlock';
 import CertificationHero from './components/ui/CertificationHero';
 import CertificationLicensing from './components/ui/CertificationLicensing';
-import CBUAELicenseFeatures from './components/ui/CBUAELicenseFeatures';
+import CBBLicenseFeatures from './components/ui/CBBLicenseFeatures';
 import SuperAppSection from './components/ui/SuperAppSection';
 import ConsumerAppFeature from './components/ui/ConsumerAppFeature';
 import MerchantAppFeature from './components/ui/MerchantAppFeature';
@@ -87,7 +87,7 @@ export default function HomeClient({ pageData = null }) {
         // Added fallback to idx so that even if the title is completely changed in the CMS, the sections will still render in the correct order.
         if (titleLower.includes('cbuae licensed') || idx === 0) {
           return (
-            <CBUAELicenseFeatures 
+            <CBBLicenseFeatures 
               key={idx}
               eyebrow={section.title}
               title={section.subtitle}

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-All commands must be run from inside the `pay10.ae/` directory.
+All commands must be run from inside the `pay10.bh/` directory.
 
 ```bash
 npm run dev      # Start dev server on port 3186 (uses Turbopack)
@@ -65,7 +65,7 @@ The frontend never calls the backend API directly from the client. `app/api/prox
 
 ### Redirects
 
-Legacy PHP URLs and old slug variants are permanently redirected in `next.config.js` under `redirects()`. `proxy.js` (the middleware, exported as `proxy`/`config` — despite the filename it's the Next.js middleware) redirects bare `pay10.ae` → `www.pay10.ae` with a 308, and rate-limits `/api/proxy/*` (10 req/min per IP, in-memory store — valid only because this runs as a single long-lived `next start` process, not serverless/edge).
+Legacy PHP URLs and old slug variants are permanently redirected in `next.config.js` under `redirects()`. `proxy.js` (the middleware, exported as `proxy`/`config` — despite the filename it's the Next.js middleware) redirects bare `pay10.bh` → `www.pay10.bh` with a 308, and rate-limits `/api/proxy/*` (10 req/min per IP, in-memory store — valid only because this runs as a single long-lived `next start` process, not serverless/edge).
 
 ### Fonts
 

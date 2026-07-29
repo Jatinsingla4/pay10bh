@@ -11,12 +11,12 @@ export const defaultMetadata = {
   keywords: 'Best payment gateway in UAE, Payment gateway company in UAE, Best payment gateway services provider in UAE, Payment gateway company, Payment gateways in UAE, Best Payment Gateway, Best Payment Gateway in UAE, Payment Gateways In UAE, Best Payment Gateways',
   robots: stagingRobots,
   alternates: {
-    canonical: 'https://pay10.ae',
+    canonical: 'https://pay10.bh',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://pay10.ae',
+    url: 'https://pay10.bh',
     siteName: 'Pay 10',
     title: "Pay 10 - Trusted Payment Partner in UAE",
     description: 'Pay 10 UAE is a regulated payments platform building secure, interoperable, and compliance-led payment infrastructure in the UAE.',
@@ -40,7 +40,7 @@ export const defaultMetadata = {
 // Helper function to generate metadata from API pageData
 export const generateApiMetadata = (pageData, fallbackTitle = 'Pay 10', fallbackDescription = defaultMetadata.description) => {
   const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pay10.ae';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pay10.bh';
 
   let rawTitle = pageData?.meta_title || fallbackTitle;
   
@@ -115,7 +115,7 @@ export const generateApiMetadata = (pageData, fallbackTitle = 'Pay 10', fallback
 // Helper function to generate blog post metadata
 export const generateBlogMetadata = (blog, fallbackTitle = 'Pay 10', fallbackDescription = defaultMetadata.description) => {
   const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pay10.ae';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pay10.bh';
   const description = blog?.short_description || blog?.description?.replace(/<[^>]*>/g, '').substring(0, 160) || fallbackDescription;
   const canonicalUrl = `${siteUrl}/blog/${blog?.slug || ''}`;
 

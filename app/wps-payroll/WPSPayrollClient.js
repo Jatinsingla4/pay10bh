@@ -21,7 +21,7 @@ const WPSPayrollClient = ({ pageData = null }) => {
   // ConsumerFeatureSection 1
   const rawSubHeading1 = pageData?.sections?.[0]?.description || pageData?.sections?.[0]?.content || "";
   const parts1 = rawSubHeading1.split('---');
-  const subHeadingText1 = parts1[0]?.replace(/<[^>]*>?/gm, '')?.trim() || "The Wage Protection System (WPS) is a UAE government mandate managed by the Central Bank of the UAE (CBUAE). It requires every employer in the UAE: across all industries, for all workers, blue collar and white collar: to process salaries digitally through a CBUAE-licensed provider. The system verifies that every employee is paid what their labour contract says, and that they are paid on time. Non-compliance carries significant penalties. Pay10 is a fully licensed WPS provider: meaning every salary processed through Pay10 satisfies this mandate completely.";
+  const subHeadingText1 = parts1[0]?.replace(/<[^>]*>?/gm, '')?.trim() || "The Wage Protection System (WPS) is a UAE government mandate managed by the Central Bank of Bahrain (CBB). It requires every employer in the UAE: across all industries, for all workers, blue collar and white collar: to process salaries digitally through a CBB-licensed provider. The system verifies that every employee is paid what their labour contract says, and that they are paid on time. Non-compliance carries significant penalties. Pay10 is a fully licensed WPS provider: meaning every salary processed through Pay10 satisfies this mandate completely.";
   const tagsText1 = parts1[1] || pageData?.sections?.[0]?.cards?.[0]?.tags;
   const points1 = tagsText1 ? tagsText1.split(',').map(t => t.trim().replace(/<[^>]*>?/gm, '')).filter(Boolean) : [];
 
@@ -33,7 +33,7 @@ const WPSPayrollClient = ({ pageData = null }) => {
   const points2 = tagsText2 ? tagsText2.split(',').map(t => t.trim().replace(/<[^>]*>?/gm, '')).filter(Boolean) : [
     "Smooth migration for existing payroll cards: no disruption to employees",
     "Seamless salary disbursement from day one",
-    "Full regulatory compliance with the new CBUAE WPS framework",
+    "Full regulatory compliance with the new CBB WPS framework",
     "Reduced administrative effort for HR and payroll teams",
     "Digital access for all employees via Pay10 UAE",
     "Transparent fee structure and simplified onboarding process"
@@ -54,7 +54,7 @@ const WPSPayrollClient = ({ pageData = null }) => {
   const employersCard = getCardDetails(pageData?.sections?.[1]?.cards?.[0], {
     title: 'For employers',
     description: 'One WPS solution for all your payroll needs. From SMEs with 10 staff to enterprises with thousands: Pay10 handles it all, compliantly.',
-    tags: 'Fully CBUAE-licensed WPS salary disbursement, Upload SIF file: Pay10 processes instantly, IBAN transfers for banked employees, Universal Account setup for unbanked workers, Analytics dashboard: full payroll visibility, Reduced admin effort and paperwork, Transparent fee structure: no surprises, Smooth migration from existing payroll cards, Full regulatory compliance with new CBUAE WPS framework'
+    tags: 'Fully CBB-licensed WPS salary disbursement, Upload SIF file: Pay10 processes instantly, IBAN transfers for banked employees, Universal Account setup for unbanked workers, Analytics dashboard: full payroll visibility, Reduced admin effort and paperwork, Transparent fee structure: no surprises, Smooth migration from existing payroll cards, Full regulatory compliance with new CBB WPS framework'
   });
   const employeesCard = getCardDetails(pageData?.sections?.[1]?.cards?.[1], {
     title: 'For employees',
@@ -75,7 +75,7 @@ const WPSPayrollClient = ({ pageData = null }) => {
     desc: (c.description || c.content || "").replace(/<[^>]*>?/gm, '').trim(),
     icon: benefitIcons[i % benefitIcons.length]
   })) || [
-    { num: '01', icon: benefitIcons[0], title: 'Fully CBUAE licensed', desc: 'CBUAE-licensed WPS provider enabling secure, compliant, and fully digital salary processing: aligned with the new WPS framework.' },
+    { num: '01', icon: benefitIcons[0], title: 'Fully CBB licensed', desc: 'CBB-licensed WPS provider enabling secure, compliant, and fully digital salary processing: aligned with the new WPS framework.' },
     { num: '02', icon: benefitIcons[1], title: 'Secure salary transfers', desc: 'IBAN-based transfers for banked employees. Universal Account for unbanked and blue-collar workers: safe, instant, every salary run.' },
     { num: '03', icon: benefitIcons[2], title: 'Jaywan card services', desc: 'Jaywan card issued to every unbanked employee: linked to their Universal Account for ATM withdrawals, POS purchases, and digital payments.' },
     { num: '04', icon: benefitIcons[3], title: 'Pay10 UAE', desc: 'Full digital access for blue-collar employees to their Universal Account: view balance, pay bills, scan and pay, send money, manage their card.' },
@@ -147,7 +147,7 @@ const WPSPayrollClient = ({ pageData = null }) => {
         >
           <div className={styles.altareq_hero_content}>
             <h1 dangerouslySetInnerHTML={{ __html: pageData?.page_title || "UAE's seamless solution<br />for salary compliance." }} />
-            <p dangerouslySetInnerHTML={{ __html: pageData?.page_description || "Pay all your employees' salaries digitally: compliant, scalable, and fully powered by Pay10. A CBUAE-licensed WPS provider built for every type of UAE employer and every type of UAE employee." }} />
+            <p dangerouslySetInnerHTML={{ __html: pageData?.page_description || "Pay all your employees' salaries digitally: compliant, scalable, and fully powered by Pay10. A CBB-licensed WPS provider built for every type of UAE employer and every type of UAE employee." }} />
           </div>
         </div>
       </section>

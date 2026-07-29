@@ -76,7 +76,7 @@ export default function BlogClient({ initialBlogs = [] }) {
                   <div className={Style.shareRow}>
                     <span>Share:</span>
                     <a
-                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://www.pay10.ae/blog/${featuredPost.slug}`)}`}
+                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://www.pay10.bh/blog/${featuredPost.slug}`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={Style.shareBtn}
@@ -85,7 +85,7 @@ export default function BlogClient({ initialBlogs = [] }) {
                       <Icon icon="mdi:linkedin" />
                     </a>
                     <a
-                      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://www.pay10.ae/blog/${featuredPost.slug}`)}&text=${encodeURIComponent(featuredPost.title)}`}
+                      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://www.pay10.bh/blog/${featuredPost.slug}`)}&text=${encodeURIComponent(featuredPost.title)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={Style.shareBtn}
@@ -134,7 +134,7 @@ export default function BlogClient({ initialBlogs = [] }) {
                   <div className={Style.shareRow}>
                     <span>Share:</span>
                     <a
-                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://www.pay10.ae/blog/${post.slug}`)}`}
+                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://www.pay10.bh/blog/${post.slug}`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={Style.shareBtn}
@@ -143,7 +143,7 @@ export default function BlogClient({ initialBlogs = [] }) {
                       <Icon icon="mdi:linkedin" />
                     </a>
                     <a
-                      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://www.pay10.ae/blog/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
+                      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://www.pay10.bh/blog/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={Style.shareBtn}

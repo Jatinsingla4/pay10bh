@@ -8,13 +8,13 @@ export async function generateMetadata() {
     return {
       title: data.seo.title || "Careers - Pay10",
       description: data.seo.description || "Join the Pay10 team. Build your future with Pay10, building smart, secure, and fast payment solutions in the UAE.",
-      alternates: { canonical: "https://pay10.ae/careers" },
+      alternates: { canonical: "https://pay10.bh/careers" },
     };
   }
   return {
     title: "Careers - Pay 10",
     description: "Join the Pay10 team. Build your future with Pay10, building smart, secure, and fast payment solutions in the UAE.",
-    alternates: { canonical: "https://pay10.ae/careers" },
+    alternates: { canonical: "https://pay10.bh/careers" },
   };
 }
 

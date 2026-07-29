@@ -278,10 +278,10 @@ const ContactClient = ({ pageData = null }) => {
 
   const getContactEmail = () => {
     switch (activeFormType) {
-      case "SME Sales": return "sales@pay10.ae";
-      case "Enterprise Sales": return "enterprisesales@pay10.ae";
-      case "Channel Partner": return "channelpartners@pay10.ae";
-      default: return "info@pay10.ae";
+      case "SME Sales": return "sales@pay10.bh";
+      case "Enterprise Sales": return "enterprisesales@pay10.bh";
+      case "Channel Partner": return "channelpartners@pay10.bh";
+      default: return "info@pay10.bh";
     }
   };
 

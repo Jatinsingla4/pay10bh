@@ -4,7 +4,7 @@ export const metadata = {
   title: "Key Fact Statement \u2013 Pay 10",
   description: "Read the Key Fact Statement for Pay10 Customer Wallet and Bizz App to understand the transaction fees, limits, and product guidelines.",
   alternates: {
-    canonical: "https://pay10.ae/key-fact-statement",
+    canonical: "https://pay10.bh/key-fact-statement",
   },
 };
 

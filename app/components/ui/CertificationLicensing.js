@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './CertificationLicensing.module.scss';
 
 export default function CertificationLicensing({
-  heading = 'Pay Ten Payment Services Provider LLC (Pay10) is licensed and regulated by the Central Bank of the UAE.',
+  heading = 'Pay Ten Payment Services Provider LLC (Pay10) is licensed and regulated by the Central Bank of Bahrain.',
   centralBankImage,
   licensedByHeading = 'Licensed by:',
   licenseImages = [],
@@ -58,7 +58,7 @@ export default function CertificationLicensing({
             <div className={styles.logoContainer}>
               <Image
                 src={centralBankImage}
-                alt="Central Bank of the UAE"
+                alt="Central Bank of Bahrain"
                 width={200}
                 height={100}
                 className={styles.centralBankLogo}

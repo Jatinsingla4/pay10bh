@@ -7,7 +7,7 @@ export async function generateMetadata() {
   return fetchPageMeta('pos-devices', {
     title: "POS Devices – Pay 10",
     description: "The new way to pay at every counter in the UAE.",
-    alternates: { canonical: "https://pay10.ae/pos-devices" },
+    alternates: { canonical: "https://pay10.bh/pos-devices" },
   });
 }
 

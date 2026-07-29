@@ -1,4 +1,4 @@
-// Direct Key Fact Statement static payload extracted from pay10.ae/key-fact-statement/
+// Direct Key Fact Statement static payload extracted from pay10.bh/key-fact-statement/
 const kfsData = [
   {
     tabName: "Pay10 UAE",
@@ -59,7 +59,7 @@ const kfsData = [
 <td>Fee and Charges</td>
 <td>
 <ul>
- 	<li>Please refer to the Schedule of Charges of our website www.pay10.ae</li>
+ 	<li>Please refer to the Schedule of Charges of our website www.pay10.bh</li>
 </ul>
 </td>
 </tr>
@@ -92,7 +92,7 @@ const kfsData = [
 <td>
 <ul>
  	<li>24/7 support center: 800 - 729110</li>
- 	<li>Email: <a href="mailto:support@pay10.ae">support@pay10.ae</a></li>
+ 	<li>Email: <a href="mailto:support@pay10.bh">support@pay10.bh</a></li>
 </ul>
 </td>
 </tr>
@@ -112,7 +112,7 @@ const kfsData = [
 <h6><strong>Important Notes</strong></h6>
 <ul>
  	<li>Funds in Pay10 UAE are not interest-bearing</li>
- 	<li>Pay10 is licensed and regulated by the Central Bank of the UAE (CBUAE).</li>
+ 	<li>Pay10 is licensed and regulated by the Central Bank of Bahrain (CBB).</li>
  	<li>Your consent is required for data sharing with third parties</li>
  	<li>You have the right to withdraw consent for data sharing at any time</li>
  	<li>Pay10 has the right to change the terms and conditions of the product, with a 60-day notice for any changes.</li>
@@ -130,8 +130,8 @@ const kfsData = [
  	<li>If you see a transaction on your account that you do not recognize, or you think may be incorrect, you must contact us immediately via the call center or our website.</li>
  	<li>You acknowledge that Pay10 will not be liable for any losses due to unauthorized use of your wallet if such unauthorized use results from your failure to keep credentials confidential</li>
 </ol>
-<p>For full details, please refer to our Terms and Conditions available at <a href="https://www.pay10.ae/terms-of-service">https://www.pay10.ae/terms-of-service</a></p>
-<p>Please note that this KFS will be updated from time to time as per mandate from Central Bank of the UAE (CBUAE).</p>							</div>
+<p>For full details, please refer to our Terms and Conditions available at <a href="https://www.pay10.bh/terms-of-service">https://www.pay10.bh/terms-of-service</a></p>
+<p>Please note that this KFS will be updated from time to time as per mandate from Central Bank of Bahrain (CBB).</p>							</div>
 				</div>
 				`
   },
@@ -203,7 +203,7 @@ With Pay10 Biz UAE, you can easily accept and track payments from Pay10 Customer
 <td>Fee and Charges</td>
 <td>
 <ul>
- 	<li>Please refer to the Schedule of Charges of our website www.pay10.ae</li>
+ 	<li>Please refer to the Schedule of Charges of our website www.pay10.bh</li>
 </ul>
 </td>
 </tr>
@@ -234,8 +234,8 @@ With Pay10 Biz UAE, you can easily accept and track payments from Pay10 Customer
 <td>
 <ul>
  	<li>24/7 support center: 800 - 729110</li>
- 	<li>Email: <a href="mailto:merchant.support@pay10.ae">merchant.support@pay10.ae</a></li>
- 	<li>For more information of our Merchant Payment Solutions, please visit <a href="https://www.pay10.ae">pay10.ae</a> or contact <a href="mailto:sales@pay10.ae">sales@pay10.ae</a></li>
+ 	<li>Email: <a href="mailto:merchant.support@pay10.bh">merchant.support@pay10.bh</a></li>
+ 	<li>For more information of our Merchant Payment Solutions, please visit <a href="https://www.pay10.bh">pay10.bh</a> or contact <a href="mailto:sales@pay10.bh">sales@pay10.bh</a></li>
 </ul>
 </td>
 </tr>
@@ -243,7 +243,7 @@ With Pay10 Biz UAE, you can easily accept and track payments from Pay10 Customer
 <td>Complaints and Dispute Resolution</td>
 <td>
 <ul>
- 	<li>Reach out 24/7 support center: 800 - 729110 or Email: <a href="mailto:merchant.support@pay10.ae">merchant.support@pay10.ae</a> for any Disputes or Complains.</li>
+ 	<li>Reach out 24/7 support center: 800 - 729110 or Email: <a href="mailto:merchant.support@pay10.bh">merchant.support@pay10.bh</a> for any Disputes or Complains.</li>
 </ul>
 </td>
 </tr>
@@ -252,7 +252,7 @@ With Pay10 Biz UAE, you can easily accept and track payments from Pay10 Customer
 <h6><strong>Important Notes</strong></h6>
 <ul>
  	<li>Funds in Pay10 UAE are not interest-bearing</li>
- 	<li>Pay10 is regulated by the Central Bank of the UAE (CBUAE)</li>
+ 	<li>Pay10 is regulated by the Central Bank of Bahrain (CBB)</li>
  	<li>Your consent is required for data sharing with third parties</li>
  	<li>You have the right to withdraw consent for data sharing at any time</li>
  	<li>Pay10 has the right to change the terms and conditions of the product, with a 60-day notice for any changes in fees or charges.</li>
@@ -269,7 +269,7 @@ With Pay10 Biz UAE, you can easily accept and track payments from Pay10 Customer
  	<li>Refunds for the full transaction value are available through the Pay10 Biz UAE to assist merchants in processing returns or addressing customer claims. Pay10 bears no liability for any misuse of this feature by business employees or authorized users of the Pay10 Biz UAE.</li>
  	<li>For full details of our terms and conditions, please refer to the signed agreement.</li>
 </ol>
-<p>Please note that this KFS will be updated from time to time as per mandate from Central Bank of the UAE (CBUAE).</p>
+<p>Please note that this KFS will be updated from time to time as per mandate from Central Bank of Bahrain (CBB).</p>
 
 &nbsp;							</div>
 				</div>

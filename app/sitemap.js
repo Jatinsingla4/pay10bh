@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pay10.ae';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pay10.bh';
 
   // Static routes matching production
   const routes = [

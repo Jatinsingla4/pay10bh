@@ -8,13 +8,13 @@ export async function generateMetadata() {
     return {
       title: data.seo.title || "Send Abroad | Pay10 UAE",
       description: data.seo.description || "Your family shouldn't wait for their money. With Pay10 UAE Send Abroad, your transfer reaches your loved ones the same day - instantly.",
-      alternates: { canonical: "https://pay10.ae/send-abroad" },
+      alternates: { canonical: "https://pay10.bh/send-abroad" },
     };
   }
   return {
     title: "Send Abroad | Pay10 UAE",
     description: "Your family shouldn't wait for their money. With Pay10 UAE Send Abroad, your transfer reaches your loved ones the same day - instantly.",
-    alternates: { canonical: "https://pay10.ae/send-abroad" },
+    alternates: { canonical: "https://pay10.bh/send-abroad" },
   };
 }
 

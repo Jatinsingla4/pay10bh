@@ -75,7 +75,7 @@ const MerchantPortalClient = ({ pageData = null }) => {
     { num: '1', title: 'Lowest MDR', desc: 'The lowest transaction fees on the UAE market. Keep more of every sale.' },
     { num: '2', title: 'Same-day settlement', desc: 'T+0. Your working capital available the day you earn it.' },
     { num: '3', title: 'No hidden fees', desc: 'Complete visibility. What you see is exactly what you pay.' },
-    { num: '4', title: 'CBUAE Licensed', desc: 'Four Central Bank of UAE licences. A fully regulated financial partner.' },
+    { num: '4', title: 'CBB Licensed', desc: 'Four Central Bank of Bahrain licences. A fully regulated financial partner.' },
     { num: '5', title: '24/7 Human support', desc: 'Call. A human picks up. Multi-language. Zero wait. Every time.' }
   ];
 

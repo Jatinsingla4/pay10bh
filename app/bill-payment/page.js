@@ -8,13 +8,13 @@ export async function generateMetadata() {
     return {
       title: data.seo.title || "Bill Payment | Pay10 UAE",
       description: data.seo.description || "Never miss a bill. Never switch apps again. All your UAE bills paid from one place.",
-      alternates: { canonical: "https://pay10.ae/bill-payment" },
+      alternates: { canonical: "https://pay10.bh/bill-payment" },
     };
   }
   return {
     title: "Bill Payment | Pay10 UAE",
     description: "Never miss a bill. Never switch apps again. All your UAE bills paid from one place.",
-    alternates: { canonical: "https://pay10.ae/bill-payment" },
+    alternates: { canonical: "https://pay10.bh/bill-payment" },
   };
 }
 

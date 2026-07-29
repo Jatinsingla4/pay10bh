@@ -96,7 +96,7 @@ const defaultDecorations = [
 
 export default function HeroHomeBanner({
   eyebrow = 'Your Trusted Alternative Payment Method',
-  subtitle: subtitleProp = 'Licensed by Central Bank of the UAE\nInstant. Secure. Interoperable.',
+  subtitle: subtitleProp = 'Licensed by Central Bank of Bahrain\nInstant. Secure. Interoperable.',
   description: descriptionProp = '<h1>Why Pay, When You Can Pay10</h1>',
   ctaLabel = 'Get Started',
   ctaHref = '/contact-us',
@@ -111,7 +111,7 @@ export default function HeroHomeBanner({
   mobileBgImage,
 }) {
   const description = isEmptyHtml(descriptionProp) ? '<h1>Why Pay, When You Can Pay10</h1>' : descriptionProp;
-  const subtitle = isEmptyHtml(subtitleProp) ? 'Licensed by Central Bank of the UAE\nInstant. Secure. Interoperable.' : subtitleProp;
+  const subtitle = isEmptyHtml(subtitleProp) ? 'Licensed by Central Bank of Bahrain\nInstant. Secure. Interoperable.' : subtitleProp;
   const hasHeroImage = heroImage && heroImage.src;
   const rootRef = useRef(null);
 

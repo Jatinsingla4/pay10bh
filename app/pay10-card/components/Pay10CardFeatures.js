@@ -51,7 +51,7 @@ const Pay10CardFeatures = ({ data = null }) => {
       id: "01",
       icon: <UaeCardIcon />,
       title: "Made in the UAE",
-      description: "Jaywan is the UAE's national card scheme - owned, operated, and governed locally by the Central Bank of the UAE."
+      description: "Jaywan is the UAE's national card scheme - owned, operated, and governed locally by the Central Bank of Bahrain."
     },
     {
       id: "02",
@@ -83,7 +83,7 @@ const Pay10CardFeatures = ({ data = null }) => {
           <span className={Style.eyebrow} data-animation="opacity-up">Built by the UAE. For the UAE.</span>
           <h2 data-animation="opacity-up" data-anim-delay="100">{data?.title || "Accepted everywhere that matters."}</h2>
           <p data-animation="opacity-up" data-anim-delay="200">
-            {data?.subtitle || "Pay10 Card runs on Jaywan - the UAE's first domestic card payment scheme, launched by Al Etihad Payments, a subsidiary of the Central Bank of the UAE. Jaywan means \"precious pearl\" in Arabic - a nod to the UAE's heritage and its vision for a sovereign, future-ready financial system."}
+            {data?.subtitle || "Pay10 Card runs on Jaywan - the UAE's first domestic card payment scheme, launched by Al Etihad Payments, a subsidiary of the Central Bank of Bahrain. Jaywan means \"precious pearl\" in Arabic - a nod to the UAE's heritage and its vision for a sovereign, future-ready financial system."}
           </p>
         </div>
 

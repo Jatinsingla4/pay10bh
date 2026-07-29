@@ -361,7 +361,7 @@ const PosDevicesClient = ({ pageData = null, testimonialVideos = [], testimonial
 
         <div className={styles.combo_cta}>
           <h2 className={styles.combo_heading} dangerouslySetInnerHTML={{ __html: pageData?.sections?.[5]?.title || "Ready to accept payments<br/>the new UAE way?" }} />
-          <p className={styles.combo_sub} dangerouslySetInnerHTML={{ __html: pageData?.sections?.[5]?.subtitle || "Our team delivers, installs, and activates your DQR device. You start accepting payments instantly. Lowest MDR. Same-day settlement. 24/7 human support. CBUAE licensed." }} />
+          <p className={styles.combo_sub} dangerouslySetInnerHTML={{ __html: pageData?.sections?.[5]?.subtitle || "Our team delivers, installs, and activates your DQR device. You start accepting payments instantly. Lowest MDR. Same-day settlement. 24/7 human support. CBB licensed." }} />
           <Link href="/contact-us?type=Enterprise+Sales" className={styles.combo_btn}>Enterprise Sales</Link>
         </div>
 

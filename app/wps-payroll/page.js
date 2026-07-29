@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return fetchPageMeta('wps-payroll', {
     title: "WPS & Payroll – Pay 10",
     description: "UAE's seamless solution for salary compliance.",
-    alternates: { canonical: "https://pay10.ae/wps-payroll" },
+    alternates: { canonical: "https://pay10.bh/wps-payroll" },
   });
 }
 

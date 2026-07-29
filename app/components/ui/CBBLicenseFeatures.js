@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./CBUAELicenseFeatures.module.scss";
+import Style from "./CBBLicenseFeatures.module.scss";
 
 const ArrowIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,8 +26,8 @@ const CheckIcon = () => (
   </svg>
 );
 
-const CBUAELicenseFeatures = ({ 
-  eyebrow = "CBUAE Licensed · Our Credibility",
+const CBBLicenseFeatures = ({ 
+  eyebrow = "CBB Licensed · Our Credibility",
   title = "Built on the strongest regulatory foundation in the UAE.",
   content = "",
   cardsData = [],
@@ -38,7 +38,7 @@ const CBUAELicenseFeatures = ({
       id: "01",
       icon: <WalletIcon />,
       title: "Stored Value Facility",
-      description: "The license that lets us hold and manage your money - legally, safely, under CBUAE supervision.",
+      description: "The license that lets us hold and manage your money - legally, safely, under CBB supervision.",
       hoverData: {
         title: "Your money, secured and accessible anytime.",
         subtitle: "WHAT THIS LICENSE ENABLES",
@@ -125,7 +125,7 @@ const CBUAELicenseFeatures = ({
           ) : (
             <>
               <p data-animation="opacity-up" data-anim-delay="200">
-                Pay10 holds four Central Bank of the UAE licenses - SVF, RPS-II, Open Finance, and Remittance. Together they make Pay10 a fully regulated fintech solution provider to both merchants and consumers catering to all financial alternative payment methods.
+                Pay10 holds four Central Bank of Bahrain licenses - SVF, RPS-II, Open Finance, and Remittance. Together they make Pay10 a fully regulated fintech solution provider to both merchants and consumers catering to all financial alternative payment methods.
               </p>
               <div className={Style.highlight_text} data-animation="opacity-up" data-anim-delay="300">
                 Most fintechs hold 1, maybe 2. Pay10 holds all 4.
@@ -135,7 +135,7 @@ const CBUAELicenseFeatures = ({
           
           {logo && (
             <div className={Style.logo_wrapper} data-animation="opacity-up" data-anim-delay="400">
-              <img src={logo} alt="Central Bank of the UAE" className={Style.cbuae_logo} />
+              <img src={logo} alt="Central Bank of Bahrain" className={Style.cbuae_logo} />
             </div>
           )}
         </div>
@@ -173,4 +173,4 @@ const CBUAELicenseFeatures = ({
   );
 };
 
-export default CBUAELicenseFeatures;
+export default CBBLicenseFeatures;

@@ -118,7 +118,7 @@ export default function NewsRoomClient({ initialNews = [], pageData = null }) {
                     <div className={styles.shareRow}>
                       <span>Share:</span>
                       <a
-                        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(item.slug ? `https://www.pay10.ae/news-room/${item.slug}` : 'https://www.pay10.ae/news-room')}`}
+                        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(item.slug ? `https://www.pay10.bh/news-room/${item.slug}` : 'https://www.pay10.bh/news-room')}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.shareBtn}
@@ -128,7 +128,7 @@ export default function NewsRoomClient({ initialNews = [], pageData = null }) {
                         <Icon icon="mdi:linkedin" />
                       </a>
                       <a
-                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(item.slug ? `https://www.pay10.ae/news-room/${item.slug}` : 'https://www.pay10.ae/news-room')}&text=${encodeURIComponent(item.title)}`}
+                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(item.slug ? `https://www.pay10.bh/news-room/${item.slug}` : 'https://www.pay10.bh/news-room')}&text=${encodeURIComponent(item.title)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.shareBtn}

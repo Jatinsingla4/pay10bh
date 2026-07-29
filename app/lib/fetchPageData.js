@@ -3,7 +3,7 @@ const API_KEY = process.env.BACKEND_AUTH_KEY;
 
 export const API_HEADERS = {
   'X-Api-Key': API_KEY,
-  'Origin': 'https://pay10d.grapesmobile.com',
+  'Origin': process.env.BACKEND_ORIGIN_OVERRIDE || API_BASE?.replace('/api', ''),
 };
 
 export async function fetchPageData(slug) {

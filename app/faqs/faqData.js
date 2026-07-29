@@ -1,4 +1,4 @@
-// Direct FAQ static payload extracted from pay10.ae/faqs
+// Direct FAQ static payload extracted from pay10.bh/faqs
 const faqData = [
   {
     tabName: "Bill Payment",
@@ -25,7 +25,7 @@ const faqData = [
       },
       {
         question: "6. What happens if my bill payment fails?",
-        answer: "If the payment fails: the full payment will be refunded to your Pay10 Account and you will receive a confirmation notification. If you face any issues, feel free to contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> for assistance."
+        answer: "If the payment fails: the full payment will be refunded to your Pay10 Account and you will receive a confirmation notification. If you face any issues, feel free to contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> for assistance."
       },
       {
         question: "7. Can I reverse a bill payment after successful completion?",
@@ -90,7 +90,7 @@ const faqData = [
       },
       {
         question: "11. How can I contact customer support?",
-        answer: "You can contact Pay10 customer support team on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a>"
+        answer: "You can contact Pay10 customer support team on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a>"
       }
     ]
   },
@@ -99,7 +99,7 @@ const faqData = [
     faqs: [
       {
         question: "1. What should I do if I notice suspicious activity on my account?",
-        answer: "If you notice any suspicious transaction, login attempt, or activity that you do not recognize, please report it immediately. You can contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a>."
+        answer: "If you notice any suspicious transaction, login attempt, or activity that you do not recognize, please report it immediately. You can contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a>."
       },
       {
         question: "2. What is considered suspicious activity?",
@@ -107,7 +107,7 @@ const faqData = [
       },
       {
         question: "3. How can I report fraud or suspicious activity from the Pay10 UAE?",
-        answer: "You can report by contacting Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a>."
+        answer: "You can report by contacting Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a>."
       },
       {
         question: "4. What happens after I report suspicious activity?",
@@ -220,7 +220,7 @@ const faqData = [
       },
       {
         question: "23. What if I have a problem or question?",
-        answer: "You can contact the Pay10 customer support team on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a>."
+        answer: "You can contact the Pay10 customer support team on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a>."
       },
       {
         question: "24. What if my salary is delayed?",
@@ -277,7 +277,7 @@ const faqData = [
       },
       {
         question: "9. Why was my transfer put on hold or rejected?",
-        answer: "Your transfer may be held or rejected due to regulatory checks or incorrect beneficiary details. For more information, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a>."
+        answer: "Your transfer may be held or rejected due to regulatory checks or incorrect beneficiary details. For more information, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a>."
       },
       {
         question: "10. Is Send Abroad secure?",
@@ -346,7 +346,7 @@ const faqData = [
       },
       {
         question: "7. I faced an error while verifying with UAEPASS. What should I do?",
-        answer: "First, make sure your UAEPASS app is updated and that you have a stable internet connection. If the issue continues, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> for assistance."
+        answer: "First, make sure your UAEPASS app is updated and that you have a stable internet connection. If the issue continues, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> for assistance."
       },
       {
         question: "8. Can I register on Pay10 without UAEPASS?",
@@ -366,7 +366,7 @@ const faqData = [
       },
       {
         question: "12. What happens if I lose my phone?",
-        answer: "If you lose your phone, immediately contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> to block your account temporarily and prevent unauthorized access. Once you’re able to log in again, reach out to Pay10 Support to have your account unblocked and receive further assistance."
+        answer: "If you lose your phone, immediately contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> to block your account temporarily and prevent unauthorized access. Once you’re able to log in again, reach out to Pay10 Support to have your account unblocked and receive further assistance."
       },
       {
         question: "13. How do I update my profile information?",
@@ -382,7 +382,7 @@ const faqData = [
       },
       {
         question: "16. In case of a Freeze account, will the customer have option to unfreeze themself?",
-        answer: "If your account is frozen, you won’t be able to unfreeze it on your own. You’ll need to contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> to request assistance and have your account reactivated."
+        answer: "If your account is frozen, you won’t be able to unfreeze it on your own. You’ll need to contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> to request assistance and have your account reactivated."
       },
       {
         question: "17. How do I secure my Pay10 UAE?",
@@ -402,11 +402,11 @@ const faqData = [
       },
       {
         question: "21. Why is my Pay10 UAE blocked?",
-        answer: "Your Pay10 UAE may be blocked due to multiple incorrect login attempts or because you’ve exceeded transaction limits. To resolve this, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> for assistance and further guidance."
+        answer: "Your Pay10 UAE may be blocked due to multiple incorrect login attempts or because you’ve exceeded transaction limits. To resolve this, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> for assistance and further guidance."
       },
       {
         question: "22. Why didn’t I receive an OTP?",
-        answer: "If you didn’t receive an OTP, try tapping the “Resend OTP” option. If the issue persists and you still haven’t received it, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> for further assistance."
+        answer: "If you didn’t receive an OTP, try tapping the “Resend OTP” option. If the issue persists and you still haven’t received it, please contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> for further assistance."
       },
       {
         question: "23. What can I do with the Pay10 UAE?",
@@ -438,7 +438,7 @@ const faqData = [
       },
       {
         question: "30. What are the fees for Pay10 UAE transactions?",
-        answer: "To view the latest fees for Pay10 UAE transactions, please refer to the Pay10 schedule of charges available on their official website at <a href='https://www.pay10.ae' target='_blank' rel='noopener noreferrer'>www.pay10.ae</a>. Keep in mind that all listed charges are exclusive of VAT and any other applicable federal taxes."
+        answer: "To view the latest fees for Pay10 UAE transactions, please refer to the Pay10 schedule of charges available on their official website at <a href='https://www.pay10.bh' target='_blank' rel='noopener noreferrer'>www.pay10.bh</a>. Keep in mind that all listed charges are exclusive of VAT and any other applicable federal taxes."
       },
       {
         question: "31. How do I make a payment?",
@@ -446,11 +446,11 @@ const faqData = [
       },
       {
         question: "32. What should I do if a transaction fails?",
-        answer: "If a transaction fails, the Pay10 UAE will show the reason for the failure. You should review this message and take the necessary corrective steps based on the issue. If you’re still uncertain or need help resolving the problem, it’s recommended to contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> for further assistance."
+        answer: "If a transaction fails, the Pay10 UAE will show the reason for the failure. You should review this message and take the necessary corrective steps based on the issue. If you’re still uncertain or need help resolving the problem, it’s recommended to contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> for further assistance."
       },
       {
         question: "33. What should I do if I was charged twice?",
-        answer: "If you believe you were charged twice, start by checking your payment history to confirm the duplicate transaction. Then, contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a> to validate the duplicate debit on your account. If an incorrect charge is confirmed, the support team will initiate a refund. Additionally, Pay10’s system automatically monitors transactions and may flag and reverse duplicate payments without requiring manual intervention."
+        answer: "If you believe you were charged twice, start by checking your payment history to confirm the duplicate transaction. Then, contact Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a> to validate the duplicate debit on your account. If an incorrect charge is confirmed, the support team will initiate a refund. Additionally, Pay10’s system automatically monitors transactions and may flag and reverse duplicate payments without requiring manual intervention."
       },
       {
         question: "34. What if I made an incorrect payment?",
@@ -470,7 +470,7 @@ const faqData = [
       },
       {
         question: "38. How do I contact support?",
-        answer: "You can reach Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.ae'>support@pay10.ae</a>. They’re available to assist you with any queries or issues."
+        answer: "You can reach Pay10 Support on 800 - 72910 or at <a href='mailto:support@pay10.bh'>support@pay10.bh</a>. They’re available to assist you with any queries or issues."
       },
       {
         question: "39. What is Open Banking?",
@@ -478,7 +478,7 @@ const faqData = [
       },
       {
         question: "40. What is Altareq, and what is its role in the Open Banking Platform?",
-        answer: "Altareq is the national gateway for the Open Finance Platform, launched by the Central Bank of the UAE (CBUAE). It plays a pivotal role in enabling secure and standardized data sharing between financial institutions and licensed third-party providers. Through Altareq, customers can safely connect their bank accounts to platforms like Pay10, giving them greater control over their financial data and allowing for seamless, innovative services under the Open Banking framework."
+        answer: "Altareq is the national gateway for the Open Finance Platform, launched by the Central Bank of Bahrain (CBB). It plays a pivotal role in enabling secure and standardized data sharing between financial institutions and licensed third-party providers. Through Altareq, customers can safely connect their bank accounts to platforms like Pay10, giving them greater control over their financial data and allowing for seamless, innovative services under the Open Banking framework."
       },
       {
         question: "41. What is the main benefit for the user with Open Banking?",
@@ -511,11 +511,11 @@ const faqData = [
       },
       {
         question: "4. Can I change my business type once my account is created?",
-        answer: "Once your registration with Pay10 is complete, the business type cannot be changed directly through the Pay10 Biz UAE or portal. To make changes, you’ll need to contact the Pay10 Merchant Support Team, who will guide you through the necessary steps. You can reach them by phone at 800 729 110 or via email at <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>."
+        answer: "Once your registration with Pay10 is complete, the business type cannot be changed directly through the Pay10 Biz UAE or portal. To make changes, you’ll need to contact the Pay10 Merchant Support Team, who will guide you through the necessary steps. You can reach them by phone at 800 729 110 or via email at <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>."
       },
       {
         question: "5. I don’t have a business bank account. How can I proceed?",
-        answer: "If you don’t yet have a business bank account, you can still proceed with your Pay10 registration while arranging to open a valid UAE business bank account. As a regulated entity licensed by the Central Bank of the UAE, Pay10 ensures your funds are held securely. However, to receive settlements without delays, it’s important to have an active AED bank account registered under your business name as soon as possible. For any help during this process, you’re encouraged to contact the Pay10 Merchant Support Team."
+        answer: "If you don’t yet have a business bank account, you can still proceed with your Pay10 registration while arranging to open a valid UAE business bank account. As a regulated entity licensed by the Central Bank of Bahrain, Pay10 ensures your funds are held securely. However, to receive settlements without delays, it’s important to have an active AED bank account registered under your business name as soon as possible. For any help during this process, you’re encouraged to contact the Pay10 Merchant Support Team."
       },
       {
         question: "6. Can I have a bank account in any digital bank and receive settlements?",
@@ -531,11 +531,11 @@ const faqData = [
       },
       {
         question: "9. How to unlock Pay10 Biz UAE account?",
-        answer: "If your Pay10 Biz UAE account is locked, the best course of action is to contact the Pay10 Merchant Support Team. They will help verify your identity and assist you in regaining access to your account. You can reach them by phone at 800 729 110 or via email at <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>."
+        answer: "If your Pay10 Biz UAE account is locked, the best course of action is to contact the Pay10 Merchant Support Team. They will help verify your identity and assist you in regaining access to your account. You can reach them by phone at 800 729 110 or via email at <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>."
       },
       {
         question: "10. How do I change the registered phone number or email of my account?",
-        answer: "To change the registered phone number or email on your Pay10 account, you’ll need to contact the Merchant Support Team directly. You can either call them at 800 729 110 or send a request from your currently registered email address to <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>. The support team will verify your identity and guide you through the necessary steps to update your contact information."
+        answer: "To change the registered phone number or email on your Pay10 account, you’ll need to contact the Merchant Support Team directly. You can either call them at 800 729 110 or send a request from your currently registered email address to <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>. The support team will verify your identity and guide you through the necessary steps to update your contact information."
       },
       {
         question: "11. Where can I find my Merchant ID?",
@@ -599,15 +599,15 @@ const faqData = [
       },
       {
         question: "26. What if I don’t have a balance in my Pay10 Biz UAE wallet and want to refund?",
-        answer: "If your Pay10 Biz UAE wallet doesn’t have sufficient balance, you won’t be able to process a refund. To resolve this, you’ll need to ensure your wallet is funded before initiating the refund. For further assistance, you can contact the Pay10 Merchant Support team by phone at 800 729 110 or via email at <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>."
+        answer: "If your Pay10 Biz UAE wallet doesn’t have sufficient balance, you won’t be able to process a refund. To resolve this, you’ll need to ensure your wallet is funded before initiating the refund. For further assistance, you can contact the Pay10 Merchant Support team by phone at 800 729 110 or via email at <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>."
       },
       {
         question: "27. How can I access my transaction report?",
-        answer: "You can access your transaction report by viewing the “Recent Transactions” section on the homepage of the Pay10 Biz UAE. While an advanced reporting feature via the Pay10 Merchant Portal is on its way, you can request specific reports by contacting the Pay10 Merchant Support Team at 800 729 110 or emailing <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>."
+        answer: "You can access your transaction report by viewing the “Recent Transactions” section on the homepage of the Pay10 Biz UAE. While an advanced reporting feature via the Pay10 Merchant Portal is on its way, you can request specific reports by contacting the Pay10 Merchant Support Team at 800 729 110 or emailing <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>."
       },
       {
         question: "28. Can I receive the transaction report on my email?",
-        answer: "Yes, you can receive your transaction report via email by contacting the Pay10 Merchant Support Team. Simply reach out to them at 800 729 110 or send an email to <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a> with your request, and they’ll assist you in getting the report delivered to your inbox."
+        answer: "Yes, you can receive your transaction report via email by contacting the Pay10 Merchant Support Team. Simply reach out to them at 800 729 110 or send an email to <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a> with your request, and they’ll assist you in getting the report delivered to your inbox."
       },
       {
         question: "29. Will Pay10 provide me a VAT statement every month?",
@@ -615,27 +615,27 @@ const faqData = [
       },
       {
         question: "30. How can I change my bank account for settlement?",
-        answer: "To change your settlement bank account in Pay10, you’ll need to submit a bank account IBAN confirmation letter to the Pay10 Merchant Support Team. You can reach them by phone at 800 729 110 or email them at <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a> for further guidance and processing."
+        answer: "To change your settlement bank account in Pay10, you’ll need to submit a bank account IBAN confirmation letter to the Pay10 Merchant Support Team. You can reach them by phone at 800 729 110 or email them at <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a> for further guidance and processing."
       },
       {
         question: "31. I didn’t receive my settlement. What should I do?",
-        answer: "If you haven’t received your settlement, start by checking your Pay10 Biz UAE wallet under the Recent Transactions section to locate the transaction ID linked to your settlement request. If the settlement still hasn’t arrived, reach out to the Pay10 Merchant Support Team and share the transaction ID so they can investigate and assist you. You can contact them by phone at 800 729 110 or email them at <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>."
+        answer: "If you haven’t received your settlement, start by checking your Pay10 Biz UAE wallet under the Recent Transactions section to locate the transaction ID linked to your settlement request. If the settlement still hasn’t arrived, reach out to the Pay10 Merchant Support Team and share the transaction ID so they can investigate and assist you. You can contact them by phone at 800 729 110 or email them at <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>."
       },
       {
         question: "32. How secure is your payment process?",
-        answer: "Pay10’s payment process is highly secure, backed by its status as a licensed entity regulated by the Central Bank of the UAE. The platform adheres to industry-leading security standards such as PCI DSS and SOC compliance, ensuring that all data and transactions are safeguarded through advanced encryption and tokenization. To further enhance protection, the Pay10 Biz UAE includes biometric authentication and PIN-based access, providing an additional layer of security for merchants using the Pay10 Biz UAE."
+        answer: "Pay10’s payment process is highly secure, backed by its status as a licensed entity regulated by the Central Bank of Bahrain. The platform adheres to industry-leading security standards such as PCI DSS and SOC compliance, ensuring that all data and transactions are safeguarded through advanced encryption and tokenization. To further enhance protection, the Pay10 Biz UAE includes biometric authentication and PIN-based access, providing an additional layer of security for merchants using the Pay10 Biz UAE."
       },
       {
         question: "33. What kind of support is available for merchants?",
-        answer: "Pay10 offers dedicated merchant support every day from 8 AM to 8 PM, including weekends. If you need assistance, you can reach the support team by calling 800 729 110 or emailing <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>. They’re available to help with any queries or issues related to your account, transactions, settlements, or technical concerns."
+        answer: "Pay10 offers dedicated merchant support every day from 8 AM to 8 PM, including weekends. If you need assistance, you can reach the support team by calling 800 729 110 or emailing <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>. They’re available to help with any queries or issues related to your account, transactions, settlements, or technical concerns."
       },
       {
         question: "34. What should I do if I suspect fraudulent activity?",
-        answer: "If you suspect any fraudulent activity related to your Pay10 account or transactions, it’s important to act quickly. Immediately contact the Pay10 Merchant Support Team to report the issue and provide any relevant details that can help them investigate. You can reach them by phone at 800 729 110 or by email at <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>. Prompt reporting ensures that appropriate measures can be taken to protect your account and prevent further risk."
+        answer: "If you suspect any fraudulent activity related to your Pay10 account or transactions, it’s important to act quickly. Immediately contact the Pay10 Merchant Support Team to report the issue and provide any relevant details that can help them investigate. You can reach them by phone at 800 729 110 or by email at <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>. Prompt reporting ensures that appropriate measures can be taken to protect your account and prevent further risk."
       },
       {
         question: "35. There are multiple products from Pay10. How do I know which one is best for my business?",
-        answer: "To determine which Pay10 product best suits your business, you can reach out directly to the Merchant Success team at <a href='mailto:sales@pay10.ae'>sales@pay10.ae</a>. They’ll evaluate your specific business requirements and guide you toward the most suitable solution, whether it’s QR payments, payment gateway integration, POS systems, or other offerings tailored to your operations."
+        answer: "To determine which Pay10 product best suits your business, you can reach out directly to the Merchant Success team at <a href='mailto:sales@pay10.bh'>sales@pay10.bh</a>. They’ll evaluate your specific business requirements and guide you toward the most suitable solution, whether it’s QR payments, payment gateway integration, POS systems, or other offerings tailored to your operations."
       },
       {
         question: "36. Do you support cryptocurrency business models?",
@@ -643,7 +643,7 @@ const faqData = [
       },
       {
         question: "37. Can I delete my Pay10 account?",
-        answer: "Yes, you can delete your Pay10 account by contacting the Pay10 Merchant Support Team for assistance. Reach out to them by phone at 800 729 110 or email <a href='mailto:merchant.support@pay10.ae'>merchant.support@pay10.ae</a>, and they’ll guide you through the account deletion process."
+        answer: "Yes, you can delete your Pay10 account by contacting the Pay10 Merchant Support Team for assistance. Reach out to them by phone at 800 729 110 or email <a href='mailto:merchant.support@pay10.bh'>merchant.support@pay10.bh</a>, and they’ll guide you through the account deletion process."
       },
       {
         question: "38. Where can I find the terms and conditions for using the Pay10 Biz UAE?",

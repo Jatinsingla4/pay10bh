@@ -5,7 +5,7 @@ export const metadata = {
   title: "Privacy Policy \u2013 Pay 10",
   description: "Read the Privacy Policy of Pay10 to understand how we collect, use, protect, and handle your personal data.",
   alternates: {
-    canonical: "https://pay10.ae/privacy-policy",
+    canonical: "https://pay10.bh/privacy-policy",
   },
 };
 

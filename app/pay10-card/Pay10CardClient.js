@@ -12,8 +12,8 @@ const firstNonEmptyHtml = (...vals) => vals.find(v => !isEmptyHtml(v)) ?? vals[v
 
 const Pay10CardClient = ({ pageData = null }) => {
   const cardFeature = {
-    heading: pageData?.sections?.[0]?.title || "The first local Debit Card accredited by the Central Bank of the UAE.",
-    subheading: pageData?.sections?.[0]?.subtitle || "Pay10 is issuing UAE's first CBUAE-accredited local debit card directly through the Pay10 UAE - offering an instant, secure, and seamless payment experience for everyone who calls the UAE home.",
+    heading: pageData?.sections?.[0]?.title || "The first local Debit Card accredited by the Central Bank of Bahrain.",
+    subheading: pageData?.sections?.[0]?.subtitle || "Pay10 is issuing UAE's first CBB-accredited local debit card directly through the Pay10 UAE - offering an instant, secure, and seamless payment experience for everyone who calls the UAE home.",
     points: pageData?.sections?.[0]?.cards?.map(c => c.title) || [],
     imageSrc: pageData?.sections?.[0]?.images?.[0] || "/images/prod_imports/pay10-card-aluminium.png",
     imageAlt: pageData?.sections?.[0]?.title || "Pay10 Card",
@@ -31,7 +31,7 @@ const Pay10CardClient = ({ pageData = null }) => {
       >
         <div className={Style.altareq_hero_text}>
           <h2 dangerouslySetInnerHTML={{ __html: firstNonEmptyHtml(pageData?.page_title, "Pay10 Card, UAE has been waiting for.") }} />
-          <p dangerouslySetInnerHTML={{ __html: firstNonEmptyHtml(pageData?.page_subtitle, pageData?.page_description, "The first local Debit Card accredited by the Central Bank of the UAE — instant, secure, and seamless. Built inside Pay10 UAE. For banked professionals and WPS employees.") }} />
+          <p dangerouslySetInnerHTML={{ __html: firstNonEmptyHtml(pageData?.page_subtitle, pageData?.page_description, "The first local Debit Card accredited by the Central Bank of Bahrain — instant, secure, and seamless. Built inside Pay10 UAE. For banked professionals and WPS employees.") }} />
         </div>
       </section>
 

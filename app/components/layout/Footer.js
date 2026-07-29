@@ -76,12 +76,12 @@ const footerData = {
       items: [
         {
           label: 'Brand Guidelines',
-          href: 'https://pay10.ae/wp-content/uploads/2026/05/Pay10-Ext-Brandguidelines-21-May-2026.pdf',
+          href: 'https://pay10.bh/wp-content/uploads/2026/05/Pay10-Ext-Brandguidelines-21-May-2026.pdf',
           external: true,
         },
         {
           label: 'App & Web Button Guidelines',
-          href: 'https://pay10.ae/wp-content/uploads/2026/06/Product-Approved_2June2026_Pay10-UAE_Button-Designs-April-20-RGB_Including-QR_07.pdf',
+          href: 'https://pay10.bh/wp-content/uploads/2026/06/Product-Approved_2June2026_Pay10-UAE_Button-Designs-April-20-RGB_Including-QR_07.pdf',
           external: true,
         },
         {
@@ -98,10 +98,9 @@ const footerData = {
     },
   },
   socialMedia: {
-    linkedin: 'https://ae.linkedin.com/company/pay10-uae',
-    x: 'https://x.com/pay10UAE',
-    instagram: 'https://www.instagram.com/pay10.uae/',
-    facebook: 'https://www.facebook.com/people/Pay10-UAE/61570783563019/#',
+    linkedin: 'https://www.linkedin.com/company/pay-10-bahrain',
+    instagram: 'https://www.instagram.com/pay10bh/',
+    facebook: 'https://www.facebook.com/profile.php?id=61589661046056',
     youtube: 'https://www.youtube.com/@Pay10UAE',
   },
 }
@@ -375,9 +374,6 @@ const Footer = () => {
             <a href={footerData.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="LinkedIn">
               <Icon icon="mdi:linkedin" className="footer__social-icon" />
             </a>
-            <a href={footerData.socialMedia.x} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="X">
-              <Icon icon="bi:twitter-x" className="footer__social-icon" />
-            </a>
             <a href={footerData.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Instagram">
               <Icon icon="mdi:instagram" className="footer__social-icon" />
             </a>
@@ -396,7 +392,7 @@ const Footer = () => {
         <div className="footer__bottom-container">
           <div className="footer__address footer__address--en" style={{ display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', color: '#ffffff', fontSize: '0.85rem' }}>
             <span>Copyright © 2026</span>
-            <span>Pay Ten Payment Services Provider LLC is licensed by the Central Bank of the UAE, U-Bora Office Tower, Office 1004,</span>
+            <span>Pay Ten Payment Services Provider LLC is licensed by the Central Bank of Bahrain, U-Bora Office Tower, Office 1004,</span>
             <span>Business Bay, Dubai, United Arab Emirates</span>
           </div>
         </div>
@@ -407,9 +403,6 @@ const Footer = () => {
         <div className="footer__social">
           <a href={footerData.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="LinkedIn">
             <Icon icon="mdi:linkedin" className="footer__social-icon" />
-          </a>
-          <a href={footerData.socialMedia.x} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="X">
-            <Icon icon="bi:twitter-x" className="footer__social-icon" />
           </a>
           <a href={footerData.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Instagram">
             <Icon icon="mdi:instagram" className="footer__social-icon" />

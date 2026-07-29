@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return fetchPageMeta('open-finance-altareq', {
     title: "Open Finance Al Tareeq \u2013 Pay 10",
     description: "Connect to the Open Finance Al Tareeq platform by Pay10 for secure financial data sharing and interoperability in the UAE.",
-    alternates: { canonical: "https://pay10.ae/open-finance-altareq" },
+    alternates: { canonical: "https://pay10.bh/open-finance-altareq" },
   });
 }
 

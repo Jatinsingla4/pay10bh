@@ -45,7 +45,7 @@ const PaymentGatewayClient = ({ pageData = null }) => {
         'Returns to checkout.',
         'Payment confirmed: order confirmed on your checkout. Instant. Done.'
       ],
-      footer: 'Powered by Al Tareq: the UAE\'s regulated Open Finance infrastructure. Secure, consent-driven, CBUAE compliant. <strong>The approved sentence: Connect your Account via AL TAREQ and start transacting.</strong>',
+      footer: 'Powered by Al Tareq: the UAE\'s regulated Open Finance infrastructure. Secure, consent-driven, CBB compliant. <strong>The approved sentence: Connect your Account via AL TAREQ and start transacting.</strong>',
       img: '/images/prod_imports/pg-pay-desktop.png'
     }
   ];
@@ -114,7 +114,7 @@ const PaymentGatewayClient = ({ pageData = null }) => {
       { num: '01', icon: benefitIcons[0], title: 'Lowest MDR', desc: 'The lowest transaction fees on the UAE market. Keep more of every sale.' },
       { num: '02', icon: benefitIcons[1], title: 'Same-day settlement', desc: 'T+0. Your working capital is available the day you earn it. Always.' },
       { num: '03', icon: benefitIcons[2], title: 'No hidden fees', desc: 'Complete visibility. Zero surprises. What you see is exactly what you pay.' },
-      { num: '04', icon: benefitIcons[3], title: 'CBUAE Licensed', desc: 'Four Central Bank licences. A fully regulated financial partner.' },
+      { num: '04', icon: benefitIcons[3], title: 'CBB Licensed', desc: 'Four Central Bank licences. A fully regulated financial partner.' },
       { num: '05', icon: benefitIcons[4], title: '24/7 Human support', desc: 'Call. A human picks up. Multi-language. Zero wait. Every time.' }
     ];
 

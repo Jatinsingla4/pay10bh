@@ -180,7 +180,7 @@ const PrivacyClient = () => {
                     <td>For Our legitimate interests or those of a third party, i.e. to minimize fraud that could be damaging for You and/ or Us</td>
                   </tr>
                   <tr>
-                    <td>Conducting checks to identify Our customers and verify their identity Screening for financial and other sanctions or embargoes Other activities necessary to comply with professional, legal and regulatory obligations that apply to Our business, e.g. under anti-money laundering legislation or rules issued by requirements issued by the Central Bank of the UAE (&ldquo;CBUAE&rdquo;), the UAE Data Office and any other competent UAE regulatory authority To gather information on Your use of Our services and to provide You with custom information relating to Your use of finances and/or Our services</td>
+                    <td>Conducting checks to identify Our customers and verify their identity Screening for financial and other sanctions or embargoes Other activities necessary to comply with professional, legal and regulatory obligations that apply to Our business, e.g. under anti-money laundering legislation or rules issued by requirements issued by the Central Bank of Bahrain (&ldquo;CBB&rdquo;), the UAE Data Office and any other competent UAE regulatory authority To gather information on Your use of Our services and to provide You with custom information relating to Your use of finances and/or Our services</td>
                     <td>Identity and Contact Data Financial Data Technical Data</td>
                     <td>To comply with Our applicable legal and regulatory obligations This will be necessary for Our legitimate interests in the operation of Our business</td>
                   </tr>
@@ -269,11 +269,11 @@ const PrivacyClient = () => {
 
             <h2 data-animation="fade-up">Marketing</h2>
             <p data-animation="fade-up">
-              Pay Ten Payment Services Provider Marketing will collect and process your information with the highest standard of privacy and security, fully complying with all local and international regulations. In accordance with the CBUAE Consumer Protection Regulation, we will only use your personal or financial data for marketing purposes if you give us your explicit, separate, and freely given opt-in consent, which you can easily withdraw at any time. To comply with the TDRA, we ensure that all marketing emails, SMS messages, and notifications adhere to strict anti-spam laws and protect your communication privacy. Furthermore, if you are located within the European Union, we process your data in alignment with GDPR standards, guaranteeing your rights to data minimization, transparency, and secure cross-border processing.
+              Pay Ten Payment Services Provider Marketing will collect and process your information with the highest standard of privacy and security, fully complying with all local and international regulations. In accordance with the CBB Consumer Protection Regulation, we will only use your personal or financial data for marketing purposes if you give us your explicit, separate, and freely given opt-in consent, which you can easily withdraw at any time. To comply with the TDRA, we ensure that all marketing emails, SMS messages, and notifications adhere to strict anti-spam laws and protect your communication privacy. Furthermore, if you are located within the European Union, we process your data in alignment with GDPR standards, guaranteeing your rights to data minimization, transparency, and secure cross-border processing.
             </p>
             <p data-animation="fade-up">You have the right to opt out of receiving marketing communications at any time by:</p>
             <ul data-animation="fade-up">
-              <li>Contacting Us at <a href="mailto:support@pay10.ae">support@pay10.ae</a></li>
+              <li>Contacting Us at <a href="mailto:support@pay10.bh">support@pay10.bh</a></li>
               <li>Using the &lsquo;unsubscribe&rsquo; link in emails or &lsquo;STOP&rsquo; number in texts.</li>
               <li>Disable marketing notification from Your Pay10 app</li>
             </ul>
@@ -320,7 +320,7 @@ const PrivacyClient = () => {
               We have put in place appropriate security measures to prevent Your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. Including encryption, two-factor authentication, and regular security audits. In addition, We limit access to Your personal data to those employees, agents, contractors and other third parties who have a business need to know it. They will only process Your personal data on Our instructions and they are subject to a duty of confidentiality.
             </p>
             <p data-animation="fade-up">
-              In the event of a personal data breach, We will notify You and/or the relevant regulator where required under Applicable Law, including the Central Bank of the UAE (&ldquo;CBUAE&rdquo;) and/or the UAE Data Office, in accordance with applicable legal and regulatory requirements. For the purposes of this Privacy Policy, &ldquo;CPR&rdquo; means the CBUAE Consumer Protection Regulation, and &ldquo;PDPL&rdquo; means UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data.
+              In the event of a personal data breach, We will notify You and/or the relevant regulator where required under Applicable Law, including the Central Bank of Bahrain (&ldquo;CBB&rdquo;) and/or the UAE Data Office, in accordance with applicable legal and regulatory requirements. For the purposes of this Privacy Policy, &ldquo;CPR&rdquo; means the CBB Consumer Protection Regulation, and &ldquo;PDPL&rdquo; means UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data.
             </p>
             <p data-animation="fade-up">
               We have put in place procedures to deal with any suspected personal data breach and will notify You and any applicable regulator of a breach where We are legally required to do so.
@@ -354,7 +354,7 @@ const PrivacyClient = () => {
               We may transfer Your personal data outside the UAE where permitted under Applicable Law, including where the destination country provides an adequate level of protection, where appropriate contractual or other safeguards are in place, where the transfer is necessary for the performance of a contract with You or in Your interests, where You have given explicit consent after being informed of the relevant risks, or where another lawful exception applies.
             </p>
             <p data-animation="fade-up">
-              For cross-border transfers, We obtain prior approval from the CBUAE where required for payment services data, and use standard contractual clauses or other mechanisms approved under the applicable laws.
+              For cross-border transfers, We obtain prior approval from the CBB where required for payment services data, and use standard contractual clauses or other mechanisms approved under the applicable laws.
             </p>
             <h3 data-animation="fade-up">Transfers under an exception</h3>
             <p data-animation="fade-up">We may transfer personal data to a third country or international organization located outside UAE where an exception applies under relevant data protection law including:</p>
@@ -442,7 +442,7 @@ const PrivacyClient = () => {
               Please contact Us if You have any query or concern about Our use of Your information (see below &lsquo;How to contact Us&rsquo;). We hope We will be able to resolve any issues You may have.
             </p>
             <p data-animation="fade-up">
-              You also have the right to lodge a complaint with PAY10 at <a href="mailto:support@pay10.ae">support@pay10.ae</a> or telephone: 800-PAY10. If unresolved, escalate to the CBUAE via the Sanadak platform (<a href="https://sanadak.gov.ae" target="_blank" rel="noopener noreferrer">sanadak.gov.ae</a>), which provides an independent resolution mechanism. Our complaint escalation matrix is: (1) Internal resolution within 15 days; (2) If unsatisfied, escalate to CBUAE within 30 days of Our final response, providing details of the issue, Our reference number, and supporting documents.
+              You also have the right to lodge a complaint with PAY10 at <a href="mailto:support@pay10.bh">support@pay10.bh</a> or telephone: 800-PAY10. If unresolved, escalate to the CBB via the Sanadak platform (<a href="https://sanadak.gov.ae" target="_blank" rel="noopener noreferrer">sanadak.gov.ae</a>), which provides an independent resolution mechanism. Our complaint escalation matrix is: (1) Internal resolution within 15 days; (2) If unsatisfied, escalate to CBB within 30 days of Our final response, providing details of the issue, Our reference number, and supporting documents.
             </p>
 
             <h2 data-animation="fade-up">Changes to this privacy policy</h2>
@@ -455,7 +455,7 @@ const PrivacyClient = () => {
               If You have any questions about this privacy policy including any requests to exercise Your data privacy rights, please contact:
             </p>
             <ul data-animation="fade-up">
-              <li>Email: <a href="mailto:support@pay10.ae">support@pay10.ae</a></li>
+              <li>Email: <a href="mailto:support@pay10.bh">support@pay10.bh</a></li>
               <li>Address: 1004, U-bora Office Tower, Business Bay &ndash; Dubai, UAE</li>
             </ul>
 
