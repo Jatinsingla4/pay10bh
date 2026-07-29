@@ -178,10 +178,10 @@ const SendAbroadClient = ({ pageData = null }) => {
             <div className={Style.app_type}>
               <h4>Consumer App</h4>
               <div className={Style.store_buttons}>
-                <a href="https://apps.apple.com/ae/app/pay10-uae/id6739810874" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/us/app/pay10-bahrain/id6758339638" target="_blank" rel="noopener noreferrer">
                   <img src="/images/foo-app1.svg?v=3" alt="Download Consumer App on the App Store" />
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=ae.payten.wallet.app&hl=en" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=bh.payten.wallet.app&hl=en" target="_blank" rel="noopener noreferrer">
                   <img src="/images/foo-app2.svg?v=3" alt="Get Consumer App on Google Play" />
                 </a>
               </div>

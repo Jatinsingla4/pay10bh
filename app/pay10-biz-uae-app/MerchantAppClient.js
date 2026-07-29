@@ -251,7 +251,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
         <h2 className={Style.app_download_heading}>Merchant App</h2>
         <div className={Style.app_download_badges}>
           <a
-            href="https://apps.apple.com/ae/app/pay10-biz-uae/id6741104134"
+            href="https://apps.apple.com/us/app/pay10-biz-bahrain/id6758454998"
             target="_blank"
             rel="noopener noreferrer"
             className={Style.app_qr_card}
@@ -263,7 +263,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
             </div>
           </a>
           <a
-            href="https://play.google.com/store/apps/details?id=ae.pay10.merchant.app"
+            href="https://play.google.com/store/apps/details?id=bh.pay10.merchant.app"
             target="_blank"
             rel="noopener noreferrer"
             className={Style.app_qr_card}
