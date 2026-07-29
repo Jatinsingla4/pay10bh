@@ -17,12 +17,26 @@ const findSection = (sections, keyword) =>
   sections?.find((s) => (s.title || '').toLowerCase().includes(keyword));
 
 const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLogos = [] }) => {
+  // Once the CMS is actually connected (has sections at all), a section
+  // missing from it means it was deliberately deleted — hide it rather than
+  // falling back to placeholder copy. Before the CMS has any data yet
+  // (pageData/sections empty), show every section with its hardcoded default.
+  const hasCmsData = !!pageData?.sections?.length;
+
   const scaleSection = findSection(pageData?.sections, 'every merchant');
   const benefitsSection = findSection(pageData?.sections, 'merchants get');
   const supportSection = findSection(pageData?.sections, 'human support');
   const commandSection = findSection(pageData?.sections, 'run your payments');
   const stepsSection = findSection(pageData?.sections, 'simple steps');
   const finalCtaSection = findSection(pageData?.sections, 'smarter way');
+
+  const showScale = !hasCmsData || !!scaleSection;
+  const showBenefits = !hasCmsData || !!benefitsSection;
+  const showSupport = !hasCmsData || !!supportSection;
+  const showCommand = !hasCmsData || !!commandSection;
+  const showSteps = !hasCmsData || !!stepsSection;
+  // Final CTA section always renders — it hosts the lead-gen contact form,
+  // not just CMS copy, so it shouldn't disappear if the CMS section is empty.
 
   const scaleCards = scaleSection?.cards?.map((c, i) => {
     const cleanDesc = (c.description || c.content || "").replace(/<[^>]*>?/gm, '').trim();
@@ -142,6 +156,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
         </div>
       </section>
 
+      {showScale && (
       <section className={Style.merchant_scale}>
         <div className={Style.merchant_scale_header}>
           <h2>{scaleSection?.title || "Built for every merchant, from first sale to full scale."}</h2>
@@ -158,7 +173,9 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
           ))}
         </div>
       </section>
+      )}
 
+      {showBenefits && (
       <section className={Style.biz_benefits}>
         <div className={Style.benefits_left}>
           <h2>{benefitsSection?.title || "What Pay10 merchants get that others don't."}</h2>
@@ -176,7 +193,9 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
           ))}
         </div>
       </section>
+      )}
 
+      {showSupport && (
       <section className={Style.biz_support}>
         <div className={Style.support_left}>
           <h2>{supportSection?.title || "24/7 human support · multi-language · zero wait time"}</h2>
@@ -201,7 +220,9 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
           </div>
         </div>
       </section>
+      )}
 
+      {showCommand && (
       <section className={Style.biz_command}>
         <h2 className={Style.command_heading}>{commandSection?.title || "Everything you need to run your payments, in one app."}</h2>
         <div className={Style.command_body}>
@@ -222,7 +243,9 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
           </div>
         </div>
       </section>
+      )}
 
+      {showSteps && (
       <section className={Style.biz_steps}>
         <div className={Style.steps_header}>
           <h2 className={Style.steps_heading}>{stepsSection?.title || "Up and running in 5 simple steps."}</h2>
@@ -240,6 +263,7 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
           ))}
         </div>
       </section>
+      )}
 
       <MerchantTestimonialVideos
         title="Don't take our word for it. Hear it from the merchants themselves."
