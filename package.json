@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "eslint": "^9.39.4",
-    "eslint-config-next": "16.2.10",
+    "eslint-config-next": "16.2.12",
     "qrcode": "^1.5.4",
     "sass": "^1.83.4"
   },
