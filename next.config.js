@@ -34,6 +34,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'bucket-7vbln7.s3.ap-south-1.amazonaws.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'grapesmdev.blr1.digitaloceanspaces.com',
+      },
     ],
   },
   sassOptions: {
