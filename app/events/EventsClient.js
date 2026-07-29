@@ -5,6 +5,7 @@ import Link from "next/link";
 import Style from "./events.module.scss";
 import { Icon } from "@iconify/react";
 import { isEmptyHtml } from "../lib/sanitizeHtml";
+import ComingSoon from "../components/ui/ComingSoon";
 
 const firstNonEmptyHtml = (...vals) => vals.find(v => !isEmptyHtml(v)) ?? vals[vals.length - 1];
 
@@ -43,9 +44,13 @@ export default function EventsClient({ initialEvents = [], pageData = null }) {
     return end < today ? "past" : "upcoming";
   };
 
+  if (initialEvents.length === 0) {
+    return <ComingSoon />;
+  }
+
   return (
     <main>
-      <section 
+      <section
         className={Style.bannerSection}
         style={{
           ...(pageData?.banner_image ? { '--bg-desktop': `url(${pageData.banner_image})` } : {}),
@@ -61,14 +66,9 @@ export default function EventsClient({ initialEvents = [], pageData = null }) {
 
       <section className={Style.wrapper}>
         <div className={Style.all_events_container}>
-          {initialEvents.length === 0 ? (
-            <div style={{ textAlign: "center", padding: "2rem", width: "100%" }}>
-              No events found.
-            </div>
-          ) : (
-            initialEvents.map((event, idx) => {
+          {initialEvents.map((event, idx) => {
               const status = getEventStatus(event.end_date || event.start_date);
-              
+
               return (
                 <Link
                   key={event.id}
@@ -106,8 +106,7 @@ export default function EventsClient({ initialEvents = [], pageData = null }) {
                   </div>
                 </Link>
               );
-            })
-          )}
+          })}
         </div>
 
         {initialEvents.length >= 15 && (

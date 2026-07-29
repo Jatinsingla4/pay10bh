@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Icon } from "@iconify/react";
 import styles from "./news-room.module.scss";
 import { isEmptyHtml } from "../lib/sanitizeHtml";
+import ComingSoon from "../components/ui/ComingSoon";
 
 const firstNonEmptyHtml = (...vals) => vals.find(v => !isEmptyHtml(v)) ?? vals[vals.length - 1];
 
@@ -47,6 +48,10 @@ export default function NewsRoomClient({ initialNews = [], pageData = null }) {
           item.content?.toLowerCase().includes(debouncedSearch)
       )
     : initialNews;
+
+  if (initialNews.length === 0) {
+    return <ComingSoon />;
+  }
 
   return (
     <main className={styles.newsRoomMain}>

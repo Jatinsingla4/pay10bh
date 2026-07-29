@@ -5,6 +5,7 @@ import Link from "next/link";
 import Style from "./blog.module.scss";
 import { Icon } from "@iconify/react";
 import { sanitizeHtml } from "../lib/sanitizeHtml";
+import ComingSoon from "../components/ui/ComingSoon";
 
 
 const formatDate = (dateStr) => {
@@ -22,13 +23,7 @@ const stripHtml = (html) => {
 
 export default function BlogClient({ initialBlogs = [] }) {
   if (initialBlogs.length === 0) {
-    return (
-      <main className={Style.blogListing}>
-        <div style={{ textAlign: "center", padding: "80px 20px" }}>
-          <h2>No blogs found</h2>
-        </div>
-      </main>
-    );
+    return <ComingSoon />;
   }
 
   const featuredPost = initialBlogs[0];
