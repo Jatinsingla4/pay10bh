@@ -23,29 +23,9 @@ const navigationData = {
         icon: '/images/header/prepaid.svg',
         items: [
           {
-            label: 'Pay10 UAE',
+            label: 'Consumer App',
             href: '/pay10-uae-app',
             icon: '/images/header/pay-10-app.svg',
-          },
-          {
-            label: 'Bill Payment',
-            href: '/bill-payment',
-            icon: '/images/header/payments.svg',
-          },
-          {
-            label: 'Send Abroad',
-            href: '/send-abroad',
-            icon: '/images/header/collect-world.svg',
-          },
-          {
-            label: 'Pay10 Card',
-            href: '/pay10-card',
-            icon: '/images/header/prepaid.svg',
-          },
-          {
-            label: 'Open Finance Al Tareq',
-            href: '/open-finance-altareq',
-            icon: '/images/header/sf.svg',
           },
         ],
       },
@@ -55,34 +35,9 @@ const navigationData = {
         icon: '/images/header/pay-10-biz.svg',
         items: [
           {
-            label: 'Pay10 Biz UAE',
+            label: 'Merchant Biz App',
             href: '/pay10-biz-uae-app',
             icon: '/images/header/pay-10-biz.svg',
-          },
-          {
-            label: 'Merchant Portal',
-            href: '/merchant-portal',
-            icon: '/images/header/integration-method.svg',
-          },
-          {
-            label: 'Payment Gateways',
-            href: '/payment-gateway',
-            icon: '/images/header/payment-gateway.svg',
-          },
-          {
-            label: 'POS Devices',
-            href: '/pos-devices',
-            icon: '/images/header/payments.svg',
-          },
-          {
-            label: 'WPS & Payroll',
-            href: '/wps-payroll',
-            icon: '/images/header/sf.svg',
-          },
-          {
-            label: 'Channel Partners',
-            href: '/channel-partners',
-            icon: '/images/header/collect-world.svg',
           },
         ],
       },

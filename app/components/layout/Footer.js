@@ -28,22 +28,13 @@ const footerData = {
         {
           label: 'Customer Solution',
           subItems: [
-            { label: 'Pay10 UAE', href: '/pay10-uae-app' },
-            { label: 'Bill Payment', href: '/bill-payment' },
-            { label: 'Send Abroad', href: '/send-abroad' },
-            { label: 'Pay10 Card', href: '/pay10-card' },
-            { label: 'Open Finance Al Tareq', href: '/open-finance-altareq' },
+            { label: 'Consumer App', href: '/pay10-uae-app' },
           ],
         },
         {
           label: 'Business Solutions',
           subItems: [
-            { label: 'Pay10 Biz UAE', href: '/pay10-biz-uae-app' },
-            { label: 'Merchant Portal', href: '/merchant-portal' },
-            { label: 'Payment Gateways', href: '/payment-gateway' },
-            { label: 'POS Devices', href: '/pos-devices' },
-            { label: 'WPS & Payroll', href: '/wps-payroll' },
-            { label: 'Channel Partners', href: '/channel-partners' },
+            { label: 'Merchant Biz App', href: '/pay10-biz-uae-app' },
           ],
         },
       ],
