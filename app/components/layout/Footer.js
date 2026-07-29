@@ -388,8 +388,8 @@ const Footer = () => {
         <div className="footer__bottom-container">
           <div className="footer__address footer__address--en" style={{ display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', color: '#ffffff', fontSize: '0.85rem' }}>
             <span>Copyright © 2026</span>
-            <span>Pay Ten Payment Services Provider LLC is licensed by the Central Bank of Bahrain, U-Bora Office Tower, Office 1004,</span>
-            <span>Business Bay, Dubai, United Arab Emirates</span>
+            <span>PAYTEN B.S.C. (Closed) is licensed by the Central Bank of Bahrain, Office No. 2202, Building No. 1398, Road No. 4626,</span>
+            <span>Block No. 346, Manama, Kingdom of Bahrain</span>
           </div>
         </div>
       </div>
