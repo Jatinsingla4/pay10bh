@@ -926,14 +926,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 80px 56px;
+  // Top padding kept low — this section always follows .biz_final_cta,
+  // which already has its own 80px bottom padding.
+  padding: 0 56px 80px;
   gap: 28px;
   background: var(--body-bg);
 
-  @include large { padding: 80px 32px; }
+  @include large { padding: 0 32px 80px; }
 
-  @include tab { padding: 48px 24px; }
-  @include mobile { padding: 40px 16px; margin: 0 16px; }
+  @include tab { padding: 0 24px 48px; }
+  @include mobile { padding: 0 16px 40px; margin: 0 16px; }
 }
 
 .app_download_heading {
@@ -956,34 +958,26 @@
   justify-content: center;
 }
 
-.app_qr_card {
+.app_badge {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 20px;
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
+  padding: 12px 24px;
+  background: var(--black);
+  border-radius: 100px;
+  color: var(--white);
   text-decoration: none;
   transition: opacity 0.2s;
 
-  &:hover { opacity: 0.85; }
-
-  img {
-    border-radius: 8px;
-  }
+  &:hover { opacity: 0.8; }
 
   div {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
+    text-align: left;
 
-    span {
-      font-size: 0.875rem;
-      font-family: 'medium', sans-serif;
-      color: var(--black);
-    }
+    span { font-size: 10px; font-family: 'regular', sans-serif; opacity: 0.8; }
+    strong { font-size: 16px; font-family: 'semibold', sans-serif; }
   }
 }
 
@@ -992,14 +986,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 80px 56px;
+  // Top padding kept low — this section always follows .biz_steps, which
+  // already has its own 80px bottom padding.
+  padding: 0 56px 80px;
   gap: 24px;
   background: var(--body-bg);
 
-  @include large { padding: 80px 32px; }
+  @include large { padding: 0 32px 80px; }
 
-  @include tab { padding: 72px 24px; }
-  @include mobile { padding: 56px 16px; }
+  @include tab { padding: 0 24px 72px; }
+  @include mobile { padding: 0 16px 56px; }
 }
 
 .cta_heading {

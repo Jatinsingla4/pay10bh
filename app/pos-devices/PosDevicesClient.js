@@ -370,14 +370,26 @@ const PosDevicesClient = ({ pageData = null, testimonialVideos = [], testimonial
         <div className={styles.combo_download}>
           <h2 className={styles.combo_heading}>Merchant App</h2>
           <div className={styles.combo_badges}>
-            <a href="#" className={styles.app_badge} aria-label="Download on the App Store">
+            <a
+              href="https://apps.apple.com/us/app/pay10-biz-bahrain/id6758454998"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.app_badge}
+              aria-label="Download on the App Store"
+            >
               <Icon icon="ic:baseline-apple" width={28} />
               <div>
                 <span>Download on the</span>
                 <strong>App Store</strong>
               </div>
             </a>
-            <a href="#" className={styles.app_badge} aria-label="Get it on Google Play">
+            <a
+              href="https://play.google.com/store/apps/details?id=bh.pay10.merchant.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.app_badge}
+              aria-label="Get it on Google Play"
+            >
               <Icon icon="logos:google-play-icon" width={24} />
               <div>
                 <span>GET IT ON</span>
