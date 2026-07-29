@@ -22,7 +22,7 @@
     "three": "^0.185.0"
   },
   "devDependencies": {
-    "eslint": "^9.39.4",
+    "eslint": "^10.8.0",
     "eslint-config-next": "16.2.10",
     "qrcode": "^1.5.4",
     "sass": "^1.83.4"
