@@ -35,6 +35,28 @@
   }
 }
 
+.container_centered {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.left_content.left_content_centered {
+  align-items: center;
+  max-width: 1400px;
+
+  .cms_content p,
+  p {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo_wrapper {
+    margin-top: 8px;
+  }
+}
+
 .left_content {
   display: flex;
   flex-direction: column;

@@ -111,15 +111,17 @@ const CBBLicenseFeatures = ({
     return { __html: parsed };
   };
 
+  const hasCards = cardsData && cardsData.length > 0;
+
   return (
     <section className={Style.feature_grid_section}>
-      <div className={Style.container}>
-        
+      <div className={`${Style.container} ${!hasCards ? Style.container_centered : ''}`}>
+
         {/* Left Content */}
-        <div className={Style.left_content}>
+        <div className={`${Style.left_content} ${!hasCards ? Style.left_content_centered : ''}`}>
           {eyebrow && <span className={Style.eyebrow} data-animation="opacity-up">{eyebrow}</span>}
           {title && <h2 data-animation="opacity-up" data-anim-delay="100">{title}</h2>}
-          
+
           {content ? (
             <div className={Style.cms_content} data-animation="opacity-up" data-anim-delay="200" dangerouslySetInnerHTML={parseContent(content)} />
           ) : (
@@ -132,7 +134,7 @@ const CBBLicenseFeatures = ({
               </div>
             </>
           )}
-          
+
           {logo && (
             <div className={Style.logo_wrapper} data-animation="opacity-up" data-anim-delay="400">
               <img src={logo} alt="Central Bank of Bahrain" className={Style.cbuae_logo} />
@@ -141,8 +143,9 @@ const CBBLicenseFeatures = ({
         </div>
 
         {/* Right Grid */}
+        {hasCards && (
         <div className={Style.right_grid}>
-          {cardsData && cardsData.map((card, index) => (
+          {cardsData.map((card, index) => (
             <div key={index} className={Style.feature_card} data-animation="opacity-up" data-anim-delay={`${100 * (index + 1)}`}>
               <div className={Style.card_content}>
                 <div className={Style.card_header}>
@@ -167,6 +170,7 @@ const CBBLicenseFeatures = ({
             </div>
           ))}
         </div>
+        )}
 
       </div>
     </section>
