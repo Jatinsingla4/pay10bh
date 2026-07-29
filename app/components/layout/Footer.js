@@ -76,7 +76,6 @@ const footerData = {
     linkedin: 'https://www.linkedin.com/company/pay-10-bahrain',
     instagram: 'https://www.instagram.com/pay10bh/',
     facebook: 'https://www.facebook.com/profile.php?id=61589661046056',
-    youtube: 'https://www.youtube.com/@Pay10UAE',
   },
 }
 
@@ -303,9 +302,6 @@ const Footer = () => {
             </a>
             <a href={footerData.socialMedia.facebook} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Facebook">
               <Icon icon="mdi:facebook" className="footer__social-icon" />
-            </a>
-            <a href={footerData.socialMedia.youtube} target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="YouTube">
-              <Icon icon="mdi:youtube" className="footer__social-icon" />
             </a>
           </div>
         </div>
