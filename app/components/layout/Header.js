@@ -589,9 +589,6 @@ const Header = () => {
   const renderAppStoreButtons = useMemo(() => {
     return (
       <div className="header__app-store">
-        <Link href="#" className="header__contact-cta" onClick={handleNavClick}>
-          Download
-        </Link>
         <Link href="/contact-us" className="header__contact-cta" onClick={handleNavClick}>
           Contact Us
         </Link>
