@@ -3,7 +3,7 @@ import { fetchPageData } from "../lib/fetchPageData";
 import Pay10UAEAppClient from "./Pay10UAEAppClient";
 
 export async function generateMetadata() {
-  const data = await fetchPageData('pay10-uae-app');
+  const data = await fetchPageData('consumer-app');
   if (data?.seo) {
     return {
       title: data.seo.title || "Pay10 UAE | Pay10 UAE",
@@ -19,6 +19,6 @@ export async function generateMetadata() {
 }
 
 export default async function Page() {
-  const data = await fetchPageData('pay10-uae-app');
+  const data = await fetchPageData('consumer-app');
   return <Pay10UAEAppClient pageData={data} />;
 }
