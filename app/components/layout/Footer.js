@@ -64,7 +64,7 @@ const footerData = {
             { label: 'Pay10 Biz App', href: '/faqs?category=Pay10+Biz+App' },
           ]
         },
-        { label: 'Al Tareq FAQ', href: '/faq-altareq' },
+        { label: 'Merchant T&Cs', href: '/faq-altareq' },
       ],
     },
     resources: {
