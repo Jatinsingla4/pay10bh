@@ -413,7 +413,8 @@ const ContactClient = ({ pageData = null }) => {
             <div className={Style.formRight} data-animation="opacity-up" data-anim-delay="150">
               
               <div className={Style.formCategoryTabs} data-animation="opacity-up">
-                {["General Inquiry", "SME Sales", "Enterprise Sales", "Channel Partner"].map((type) => (
+                {/* ponytail: Channel Partner tab hidden for now, remove filter to bring it back */}
+                {["General Inquiry", "SME Sales", "Enterprise Sales", "Channel Partner"].filter((type) => type !== "Channel Partner").map((type) => (
                   <button
                     key={type}
                     type="button"
