@@ -3,10 +3,8 @@
 import Style from "./page.module.scss";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import MerchantTestimonialVideos from "../components/ui/MerchantTestimonialVideos";
-import MerchantLogosCTA from "../components/ui/MerchantLogosCTA";
-import BizLeadForm from "./BizLeadForm";
 import { isEmptyHtml } from "../lib/sanitizeHtml";
+import ContactCtaBtn from "../components/ui/ContactCtaBtn";
 
 const firstNonEmptyHtml = (...vals) => vals.find(v => !isEmptyHtml(v)) ?? vals[vals.length - 1];
 
@@ -16,7 +14,7 @@ const firstNonEmptyHtml = (...vals) => vals.find(v => !isEmptyHtml(v)) ?? vals[v
 const findSection = (sections, keyword) =>
   sections?.find((s) => (s.title || '').toLowerCase().includes(keyword));
 
-const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLogos = [] }) => {
+const MerchantAppClient = ({ pageData = null }) => {
   // Once the CMS is actually connected (has sections at all), a section
   // missing from it means it was deliberately deleted — hide it rather than
   // falling back to placeholder copy. Before the CMS has any data yet
@@ -265,54 +263,15 @@ const MerchantAppClient = ({ pageData = null, testimonialVideos = [], merchantLo
       </section>
       )}
 
-      <MerchantTestimonialVideos
-        title="Don't take our word for it. Hear it from the merchants themselves."
-        content="<p>From small retailers to enterprise brands, businesses across the UAE are choosing Pay10 for faster settlements, lower costs, and support that actually shows up.</p>"
-        videos={testimonialVideos}
-      />
-      <MerchantLogosCTA showCta={false} images={merchantLogos} />
-
       <section className={Style.biz_final_cta}>
         <h2 className={Style.cta_heading} dangerouslySetInnerHTML={{ __html: finalCtaSection?.title || "Ready to accept payments<br />the smarter way?" }} />
         {(() => {
-          // An empty CMS subtitle means "intentionally removed" — don't fall
-          // back to the hardcoded default in that case, only when the field
-          // is missing entirely (e.g. pageData hasn't loaded).
           const ctaSubtitle = finalCtaSection?.subtitle ?? "Lowest MDRs. Same-day settlement. 24/7 human support. CBUAE licensed. Everything your business deserves, and nothing you don't need.";
           return ctaSubtitle && <p className={Style.cta_sub}>{ctaSubtitle}</p>;
         })()}
-        <BizLeadForm />
+        <ContactCtaBtn variant="orange" />
       </section>
 
-      <section className={Style.biz_app_download}>
-        <h2 className={Style.app_download_heading}>Merchant App</h2>
-        <div className={Style.app_download_badges}>
-          <a
-            href="https://apps.apple.com/us/app/pay10-biz-bahrain/id6758454998"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Style.app_qr_card}
-          >
-            <Image src="/images/prod_imports/biz-app-store-qr.png" alt="Scan to download on the App Store" width={140} height={140} />
-            <div>
-              <Icon icon="ic:baseline-apple" width={20} />
-              <span>Download on the App Store</span>
-            </div>
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=bh.pay10.merchant.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Style.app_qr_card}
-          >
-            <Image src="/images/prod_imports/biz-play-store-qr.png" alt="Scan to get it on Google Play" width={140} height={140} />
-            <div>
-              <Icon icon="logos:google-play-icon" width={18} />
-              <span>Get it on Google Play</span>
-            </div>
-          </a>
-        </div>
-      </section>
     </main>
   );
 };

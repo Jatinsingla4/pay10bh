@@ -11,12 +11,6 @@ export async function generateMetadata() {
 }
 
 export default async function page() {
-  const [data, homeData] = await Promise.all([
-    fetchPageData('pay10-biz-uae-app'),
-    fetchPageData('homepage'),
-  ]);
-  const testimonialVideos = homeData?.sections?.[5]?.videos || [];
-  const logosSection = homeData?.sections?.find(s => s.title?.includes('Logos') || s.title?.includes('Get Started Today'));
-  const merchantLogos = logosSection?.images || [];
-  return <MerchantAppClient pageData={data} testimonialVideos={testimonialVideos} merchantLogos={merchantLogos} />;
+  const data = await fetchPageData('pay10-biz-uae-app');
+  return <MerchantAppClient pageData={data} />;
 }

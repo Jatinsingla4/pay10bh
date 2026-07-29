@@ -97,13 +97,18 @@
   }
 
   .hero_desc {
-    display: none;
+    margin: 16px 0 0;
+    font-size: 18px;
+    font-family: 'medium', sans-serif;
+    color: var(--white);
+    line-height: 1.5;
+
+    @include tab {
+      font-size: 16px;
+    }
 
     @include mobile {
-      display: block;
       font-size: 13px;
-      font-family: 'medium', sans-serif;
-      color: var(--white);
       line-height: 1.4;
       margin: 8px 0 0;
     }
@@ -174,36 +179,26 @@
 
     .features_scroll {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
+      // ponytail: auto-fit sizes columns to however many cards the CMS sends
+      // (was a hardcoded repeat(7)/repeat(4) that left a huge empty gap
+      // whenever a section had fewer cards than the fixed column count).
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       width: 100%;
       max-width: 1920px;
       margin: 0 auto;
-      
+
       // Borders applied to the centered container instead of full width
       border-top: 1px solid var(--events-box-bg);
       border-left: 1px solid var(--events-box-bg);
       border-radius: 12px; // Optional: soft corners for the grid
       overflow: hidden; // Keeps borders clean
 
-      @include large {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
       @include tab {
-        grid-template-columns: repeat(3, 1fr);
         padding: 0;
-
-        .feature_card:last-child:nth-child(3n + 1) {
-          grid-column: 1 / -1;
-        }
       }
 
       @include mobile {
-        grid-template-columns: repeat(2, 1fr);
-
-        .feature_card:last-child:nth-child(odd) {
-          grid-column: 1 / -1;
-        }
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       }
 
       .feature_card {

@@ -27,7 +27,8 @@ const CustomerAppClient = ({ pageData = null }) => {
       <ConsumerHero 
         title={pageData?.page_title}
         eyebrow={heroSection?.title || pageData?.banner_text}
-        subtitle={heroSection?.subtitle || pageData?.page_subtitle}
+        subtitle={pageData?.page_subtitle || heroSection?.subtitle}
+        sectionHeading={heroSection?.subtitle}
         description={heroSection?.content || pageData?.page_description}
         bgImage={pageData?.banner_image}
         mobileImage={pageData?.mobile_image}

@@ -6,15 +6,17 @@ import Style from "./ConsumerHero.module.scss";
 import { isEmptyHtml } from "@/app/lib/sanitizeHtml";
 
 const ConsumerHero = ({ 
-  title = "", 
-  subtitle = "", 
-  description = "", 
-  bgImage = "", 
+  title = "",
+  subtitle = "",
+  sectionHeading = "",
+  description = "",
+  bgImage = "",
   mobileBgImage = "",
   eyebrow = "",
   cardsData = []
 }) => {
   const hasSubtitle = !isEmptyHtml(subtitle);
+  const hasSectionHeading = !isEmptyHtml(sectionHeading);
   const hasDescription = !isEmptyHtml(description);
 
   // If no data provided, don't render the section
@@ -34,17 +36,20 @@ const ConsumerHero = ({
             {title && (
               <h1 className={Style.headline} data-animation="opacity-up" dangerouslySetInnerHTML={{ __html: title }}></h1>
             )}
+            {hasSubtitle && (
+              <p className={Style.hero_desc} data-animation="opacity-up" dangerouslySetInnerHTML={{ __html: subtitle }}></p>
+            )}
           </div>
         </div>
       </div>
 
-      {(hasSubtitle || hasDescription || eyebrow) && (
+      {(hasSectionHeading || hasDescription || eyebrow) && (
         <div className={Style.intro_text_section} data-animation="opacity-up">
           {eyebrow && (
             <span className={Style.intro_label}>{eyebrow}</span>
           )}
-          {hasSubtitle && (
-            <h2 className={Style.intro_heading} dangerouslySetInnerHTML={{ __html: subtitle }}></h2>
+          {hasSectionHeading && (
+            <h2 className={Style.intro_heading} dangerouslySetInnerHTML={{ __html: sectionHeading }}></h2>
           )}
           {hasDescription && (
             <div className={Style.intro_para} dangerouslySetInnerHTML={{ __html: description }}></div>
