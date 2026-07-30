@@ -258,7 +258,7 @@ const faqData = [
     ]
   },
   {
-    tabName: "Pay10 App",
+    tabName: "Consumer App",
     faqs: [
       {
         question: "1. What is the Pay10 Customer App?",
@@ -387,7 +387,7 @@ const faqData = [
     ]
   },
   {
-    tabName: "Pay10 Biz App",
+    tabName: "Merchant Bizz App",
     faqs: [
       {
         question: "1. How do I sign up for Pay10 as a merchant?",

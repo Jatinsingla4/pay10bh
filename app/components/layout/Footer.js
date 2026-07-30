@@ -50,8 +50,8 @@ const footerData = {
           href: '/faqs',
           subItems: [
             { label: 'General', href: '/faqs?category=General' },
-            { label: 'Pay10 App', href: '/faqs?category=Pay10+App' },
-            { label: 'Pay10 Biz App', href: '/faqs?category=Pay10+Biz+App' },
+            { label: 'Consumer App', href: '/faqs?category=Consumer+App' },
+            { label: 'Merchant Bizz App', href: '/faqs?category=Merchant+Bizz+App' },
           ]
         },
         { label: 'Merchant T&Cs', href: '/faq-altareq' },
