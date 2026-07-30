@@ -50,7 +50,10 @@
   .desktopInner {
     max-width: 1920px;
     display: grid;
-    gap: 20px;
+    // Tighter than the section's overall gap — keeps the whole text block
+    // (and the CTA pill at its end) higher up, clear of the hero photo's
+    // faces below.
+    gap: 12px;
 
     @include tab {
       gap: 15px;

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./SuperAppSection.module.scss";
 
 export default function SuperAppSection({
@@ -43,8 +44,11 @@ export default function SuperAppSection({
           {consumerCard && (
             <>
               <div className={styles.textCard} data-animation="fade-up" style={{ transitionDelay: '0.1s' }}>
-                <h3>{consumerCard.title}</h3>
-                <p>{consumerCard.subtitle}</p>
+                <div>
+                  <h3>{consumerCard.title}</h3>
+                  <p>{consumerCard.subtitle}</p>
+                </div>
+                <Link href="/pay10-uae-app" className={styles.cardCta}>Explore Consumer Solutions →</Link>
               </div>
 
               <div className={`${styles.imageCard} ${styles.consumerImageCard}`} data-animation="fade-up" style={{ transitionDelay: '0.2s' }}>
@@ -61,8 +65,11 @@ export default function SuperAppSection({
               </div>
 
               <div className={`${styles.textCard} ${styles.merchantTextCard}`} data-animation="fade-up" style={{ transitionDelay: '0.4s' }}>
-                <h3>{merchantCard.title}</h3>
-                <p>{merchantCard.subtitle}</p>
+                <div>
+                  <h3>{merchantCard.title}</h3>
+                  <p>{merchantCard.subtitle}</p>
+                </div>
+                <Link href="/pay10-biz-uae-app" className={styles.cardCta}>Explore Merchant Solutions →</Link>
               </div>
             </>
           )}

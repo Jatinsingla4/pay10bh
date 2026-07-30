@@ -37,12 +37,26 @@ const MerchantAppClient = ({ pageData = null }) => {
   // not just CMS copy, so it shouldn't disappear if the CMS section is empty.
 
   const scaleCards = scaleSection?.cards?.map((c, i) => {
-    const cleanDesc = (c.description || c.content || "").replace(/<[^>]*>?/gm, '').trim();
+    // Each card's content is a few CMS paragraphs. If the last one reads like
+    // a list (has a comma, doesn't end in sentence punctuation) it renders as
+    // pills instead of description text (see reference screenshot) — so an
+    // editor opts out of pills simply by ending the last paragraph with a
+    // period, like a normal sentence.
+    const paragraphs = (c.description || c.content || "")
+      .split(/<\/p>/i)
+      .map((p) => p.replace(/<[^>]*>?/gm, '').trim())
+      .filter(Boolean);
+    const lastParagraph = paragraphs[paragraphs.length - 1];
+    const looksLikeTagList = paragraphs.length > 1 && lastParagraph?.includes(',') && !/[.!?]$/.test(lastParagraph);
+    const tagsLine = looksLikeTagList ? lastParagraph : null;
+    const descParagraphs = tagsLine ? paragraphs.slice(0, -1) : paragraphs;
+
     return {
       num: `0${i + 1}`,
       title: c.title,
       sub: c.subtitle || null,
-      desc: cleanDesc,
+      desc: descParagraphs.join(' '),
+      tags: tagsLine ? tagsLine.split(',').map((t) => t.trim()).filter(Boolean) : null,
     };
   }) || [
     {
@@ -50,6 +64,7 @@ const MerchantAppClient = ({ pageData = null }) => {
       title: 'Micro Merchant',
       sub: 'Starting out or going solo',
       desc: 'Single location, lower transaction volumes. Pay10 gives micro merchants the same tools and rates that only big players used to get.',
+      tags: ['Small coldstores', 'Solo traders', 'Market stalls'],
     },
     {
       num: '02',
@@ -167,6 +182,13 @@ const MerchantAppClient = ({ pageData = null }) => {
               <h3>{card.title}</h3>
               {card.sub && <p className={Style.card_sub}>{card.sub}</p>}
               <p className={Style.card_desc}>{card.desc}</p>
+              {card.tags && card.tags.length > 0 && (
+                <div className={Style.scale_tags}>
+                  {card.tags.map((tag) => (
+                    <span key={tag} className={Style.scale_tag}>{tag}</span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -266,7 +288,7 @@ const MerchantAppClient = ({ pageData = null }) => {
       <section className={Style.biz_final_cta}>
         <h2 className={Style.cta_heading} dangerouslySetInnerHTML={{ __html: finalCtaSection?.title || "Ready to accept payments<br />the smarter way?" }} />
         {(() => {
-          const ctaSubtitle = finalCtaSection?.subtitle ?? "Lowest MDRs. Same-day settlement. 24/7 human support. CBUAE licensed. Everything your business deserves, and nothing you don't need.";
+          const ctaSubtitle = finalCtaSection?.subtitle ?? "Lowest MDRs. Same-day settlement. 24/7 human support. CBB licensed. Everything your business deserves, and nothing you don't need.";
           return ctaSubtitle && <p className={Style.cta_sub}>{ctaSubtitle}</p>;
         })()}
         <ContactCtaBtn variant="orange" />

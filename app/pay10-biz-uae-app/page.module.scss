@@ -94,7 +94,6 @@
     font-size: 48px;
     font-family: 'bold', sans-serif;
     line-height: 1.1;
-    text-transform: uppercase;
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,6 +169,22 @@
   color: var(--gray);
   line-height: 1.6;
   flex: 1;
+}
+
+.scale_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.scale_tag {
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--black);
+  font-size: 15px;
+  font-family: 'medium', sans-serif;
+  white-space: nowrap;
 }
 
 .biz_benefits {

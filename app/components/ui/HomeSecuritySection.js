@@ -76,8 +76,6 @@ const HomeSecuritySection = ({
         )}
 
         <div className={Style.certifications} data-animation="opacity-up" data-anim-delay="250">
-          <h4>Certified by</h4>
-
           <div className={Style.badgesMarquee} ref={marqueeRef}>
             <div className={Style.badgesTrack} ref={trackRef}>
               {/* Duplicate the logos array so we have enough items to slide and reset seamlessly */}
@@ -95,7 +93,7 @@ const HomeSecuritySection = ({
 
         </div>
 
-        <GlobalContactCTA title="Get Started Today" />
+        <GlobalContactCTA title="Get Started Today" subtitle="" buttonText="Get in Touch" />
 
       </div>
     </section>
