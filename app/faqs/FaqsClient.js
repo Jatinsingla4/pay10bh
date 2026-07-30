@@ -61,7 +61,12 @@ export default function FaqsClient() {
         </aside>
 
         {/* Right Content Panel */}
-        <div className={styles.content_panel} data-animation="opacity-up" data-anim-delay="200">
+        {/* No scroll-triggered animation here — this panel's height varies
+            with the active tab's FAQ count and can be very tall, and the
+            global IntersectionObserver's ratio-based threshold (0.1) never
+            reliably fires for a container that tall, leaving it stuck
+            invisible. Render it plainly instead. */}
+        <div className={styles.content_panel}>
           <h2 className={styles.tab_heading}>{activeTab?.tabName}</h2>
           
           <div className={styles.accordion_list}>
