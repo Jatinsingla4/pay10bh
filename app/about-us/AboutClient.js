@@ -15,8 +15,8 @@ import { sanitizeHtml, isEmptyHtml } from "../lib/sanitizeHtml";
 const AboutClient = ({ apiData }) => {
   const sections = apiData?.sections || [];
 
-  // --- 0. About Pay10 UAE ---
-  const aboutPay10SectionApi = sections.find(s => s.title === "About Pay10 UAE");
+  // --- 0. About Pay10 Bahrain ---
+  const aboutPay10SectionApi = sections.find(s => (s.title || '').toLowerCase().includes('about pay10'));
   const aboutHeading = aboutPay10SectionApi?.title || "";
   const aboutContent = isEmptyHtml(aboutPay10SectionApi?.content) ? "" : aboutPay10SectionApi.content;
   const aboutImage = aboutPay10SectionApi?.images?.[0] || aboutPay10SectionApi?.image || null;

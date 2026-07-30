@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./CBBLicenseFeatures.module.scss";
+import { isEmptyHtml } from "../../lib/sanitizeHtml";
 
 const ArrowIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,9 +123,13 @@ const CBBLicenseFeatures = ({
           {eyebrow && <span className={Style.eyebrow} data-animation="opacity-up">{eyebrow}</span>}
           {title && <h2 data-animation="opacity-up" data-anim-delay="100">{title}</h2>}
 
-          {content ? (
+          {!isEmptyHtml(content) ? (
             <div className={Style.cms_content} data-animation="opacity-up" data-anim-delay="200" dangerouslySetInnerHTML={parseContent(content)} />
-          ) : (
+          ) : !content && (
+            // Hardcoded placeholder copy — only for when the CMS field has
+            // never been touched (content is completely absent). An editor
+            // who deliberately clears it to an empty paragraph gets nothing
+            // rendered here instead, not this placeholder.
             <>
               <p data-animation="opacity-up" data-anim-delay="200">
                 Pay10 holds four Central Bank of Bahrain licenses - SVF, RPS-II, Open Finance, and Remittance. Together they make Pay10 a fully regulated fintech solution provider to both merchants and consumers catering to all financial alternative payment methods.

@@ -11,15 +11,15 @@
   background: var(--hero-bg-desktop) no-repeat center center;
   background-size: cover;
   color: var(--white);
-  padding: 64px 56px 0 56px;
+  padding: 40px 56px 0 56px;
 
   @include large {
-    padding: 48px 32px 0 32px;
+    padding: 32px 32px 0 32px;
   }
 
   @include tab {
     border-radius: 16px;
-    padding: 40px 16px 0px 16px;
+    padding: 24px 16px 0px 16px;
   }
 
   @include mobile {
@@ -112,12 +112,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 60px;
+    padding: 14px 40px;
     border-radius: 999px;
     border: 2px solid rgba(255, 255, 255, 0.9);
     color: var(--white);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'medium', sans-serif;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.08);

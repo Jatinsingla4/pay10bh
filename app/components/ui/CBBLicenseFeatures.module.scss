@@ -2,18 +2,18 @@
 
 .feature_grid_section {
   width: 100%;
-  padding: 80px 56px;
+  padding: 56px 56px;
 
   @include large {
-    padding: 80px 32px;
+    padding: 56px 32px;
   }
 
   @include tab {
-    padding: 60px 24px;
+    padding: 44px 24px;
   }
 
   @include mobile {
-    padding: 60px 20px;
+    padding: 44px 20px;
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   .logo_wrapper {
-    margin-top: 8px;
+    margin-top: 0;
   }
 }
 
@@ -151,13 +151,15 @@
   }
 
   .logo_wrapper {
+    margin-top: 0;
+
     .cbuae_logo {
-      width: 250px;
+      width: 400px;
       height: auto;
       object-fit: contain;
 
       @include mobile {
-        width: 200px;
+        width: 300px;
       }
     }
   }

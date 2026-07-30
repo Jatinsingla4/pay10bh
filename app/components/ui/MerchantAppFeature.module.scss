@@ -1,18 +1,18 @@
 @import "../../../styles/globals/mixin";
 
 .merchantFeatureSection {
-  padding: 80px 56px;
+  padding: 56px 56px;
 
   @include large {
-    padding: 80px 32px;
+    padding: 56px 32px;
   }
 
   @include tab {
-    padding: 60px 24px;
+    padding: 44px 24px;
   }
 
   @include mobile {
-    padding: 60px 20px;
+    padding: 44px 20px;
   }
 }
 

@@ -3,7 +3,11 @@
 .cta_section {
   text-align: center;
   width: 100%;
-  margin: 40px 0;
+  // padding, not margin — a margin here on this section (used as the last
+  // child of <main>, which has no padding/border) collapses right through
+  // and out of <main>, exposing <body>'s own white background instead of
+  // <main>'s gray one for that gap.
+  padding: 40px 0;
 }
 
 .cta_heading {

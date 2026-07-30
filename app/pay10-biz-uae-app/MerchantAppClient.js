@@ -288,7 +288,7 @@ const MerchantAppClient = ({ pageData = null }) => {
       <section className={Style.biz_final_cta}>
         <h2 className={Style.cta_heading} dangerouslySetInnerHTML={{ __html: finalCtaSection?.title || "Ready to accept payments<br />the smarter way?" }} />
         {(() => {
-          const ctaSubtitle = finalCtaSection?.subtitle ?? "Lowest MDRs. Same-day settlement. 24/7 human support. CBB licensed. Everything your business deserves, and nothing you don't need.";
+          const ctaSubtitle = finalCtaSection?.subtitle ?? "Lowest rates. Same-day settlement. 24/7 human support. CBB licensed. Everything your business deserves, and nothing you don't need.";
           return ctaSubtitle && <p className={Style.cta_sub}>{ctaSubtitle}</p>;
         })()}
         <ContactCtaBtn variant="orange" />

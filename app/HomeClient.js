@@ -14,6 +14,7 @@ import MerchantAppFeature from './components/ui/MerchantAppFeature';
 import HomeSecuritySection from './components/ui/HomeSecuritySection';
 import MerchantTestimonialVideos from './components/ui/MerchantTestimonialVideos';
 import MerchantLogosCTA from './components/ui/MerchantLogosCTA';
+import GlobalContactCTA from './components/ui/GlobalContactCTA';
 
 import React from "react";
 import gsap from "gsap";
@@ -179,6 +180,10 @@ export default function HomeClient({ pageData = null }) {
           </div>
         );
       })}
+
+      {/* Always renders at the end of the homepage — not tied to any CMS
+          section, so it survives regardless of what CMS sections exist. */}
+      <GlobalContactCTA title="Get Started Today" subtitle="" buttonText="Get in Touch" />
     </main>
   );
 }
