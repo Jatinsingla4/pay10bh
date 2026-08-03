@@ -105,7 +105,7 @@
   .team_grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     padding: 0 56px;
 
@@ -139,6 +139,46 @@
       gap: 10px;
       .member_card {
         width: calc((100% - 10px) / 2);
+      }
+    }
+
+    // Smaller cards than the default (3-per-row) grid above — used for the
+    // team section so its member photos read as visually secondary to the
+    // board section's larger ones. Left-aligned, unlike the board's
+    // centered row, per request (heading itself stays centered).
+    &.compact {
+      justify-content: flex-start;
+      gap: 16px;
+
+      .member_card {
+        width: calc((100% - 64px) / 5);
+      }
+
+      @include large {
+        .member_card {
+          width: calc((100% - 48px) / 4);
+        }
+      }
+
+      @include tab {
+        gap: 14px;
+        .member_card {
+          width: calc((100% - 28px) / 3);
+        }
+      }
+
+      @include lessTab {
+        gap: 12px;
+        .member_card {
+          width: calc((100% - 12px) / 2);
+        }
+      }
+
+      @include mobile {
+        gap: 10px;
+        .member_card {
+          width: calc((100% - 10px) / 2);
+        }
       }
     }
   }

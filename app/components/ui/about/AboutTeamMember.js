@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './AboutTeamMember.module.scss'
 
-const AboutTeamMember = ({ section5, imageBase = "", section5Heading }) => {
+const AboutTeamMember = ({ section5, imageBase = "", section5Heading, variant = "default" }) => {
   const teamMembers = section5 &&
     Array.isArray(section5.our_team_list) &&
     section5.our_team_list.length > 0
@@ -20,13 +20,15 @@ const AboutTeamMember = ({ section5, imageBase = "", section5Heading }) => {
 
   if (!teamMembers.length) return null;
 
+  const isCompact = variant === 'compact';
+
   return (
-    <div className={Style.board_members_main}>
+    <div className={`${Style.board_members_main} ${isCompact ? Style.compact : ''}`}>
       <div className={Style.board_header} data-animation="opacity-up">
         <h2>{section5Heading}</h2>
       </div>
 
-      <div className={Style.team_grid} data-animation="opacity-up">
+      <div className={`${Style.team_grid} ${isCompact ? Style.compact : ''}`} data-animation="opacity-up">
         {teamMembers.map((member, index) => (
           <div key={index} className={Style.member_card}>
             <div className={Style.member_image}>
