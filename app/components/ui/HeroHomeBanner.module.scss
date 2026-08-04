@@ -11,15 +11,15 @@
   background: var(--hero-bg-desktop) no-repeat center center;
   background-size: cover;
   color: var(--white);
-  padding: 40px 56px 0 56px;
+  padding: 10px 56px 0 56px;
 
   @include large {
-    padding: 32px 32px 0 32px;
+    padding: 10px 32px 0 32px;
   }
 
   @include tab {
     border-radius: 16px;
-    padding: 24px 16px 0px 16px;
+    padding: 10px 16px 0px 16px;
   }
 
   @include mobile {
@@ -53,10 +53,10 @@
     // Tighter than the section's overall gap — keeps the whole text block
     // (and the CTA pill at its end) higher up, clear of the hero photo's
     // faces below.
-    gap: 12px;
+    gap: 6px;
 
     @include tab {
-      gap: 15px;
+      gap: 10px;
     }
   }
 
