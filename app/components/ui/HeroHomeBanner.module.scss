@@ -79,16 +79,16 @@
     
     h1, h2, h3, h4, h5, h6, p {
       margin: 0;
-      font-size: 64px;
+      font-size: 48px;
       font-family: 'bold', sans-serif;
       color: var(--white);
 
       @include tab {
-        font-size: 48px;
+        font-size: 36px;
       }
 
       @include mobile {
-        font-size: 32px;
+        font-size: 26px;
       }
     }
   }
@@ -117,7 +117,7 @@
     border: 2px solid rgba(255, 255, 255, 0.9);
     color: var(--white);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'medium', sans-serif;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.08);
