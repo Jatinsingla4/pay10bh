@@ -53,10 +53,10 @@
     // Tighter than the section's overall gap — keeps the whole text block
     // (and the CTA pill at its end) higher up, clear of the hero photo's
     // faces below.
-    gap: 6px;
+    gap: 2px;
 
     @include tab {
-      gap: 10px;
+      gap: 4px;
     }
   }
 
@@ -79,7 +79,7 @@
     
     h1, h2, h3, h4, h5, h6, p {
       margin: 0;
-      font-size: 36px;
+      font-size: 46px;
       font-family: 'bold', sans-serif;
       color: var(--white);
 
