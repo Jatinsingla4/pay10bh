@@ -7,13 +7,13 @@ import { Icon } from "@iconify/react";
 import { sanitizeHtml, isEmptyHtml } from "../lib/sanitizeHtml";
 
 // Hardcoded Google Maps embed URL
-const MAP_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.6651841438556!2d55.270962999999995!3d25.1807808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6978338fd387%3A0xb7eeb833237a2ede!2sUbora%20Office%20Tower!5e0!3m2!1sen!2sin!4v1778165481176!5m2!1sen!2sin";
+const MAP_EMBED_URL = "https://www.google.com/maps?q=Manama%2C%20Bahrain&output=embed";
 
 // Static office data
 const STATIC_OFFICES = {
-  "dubai-uae": {
-    name: "Dubai, UAE",
-    address: "Ubora Office Tower, Business Bay, Dubai, UAE",
+  "manama-bahrain": {
+    name: "Manama, Bahrain",
+    address: "Manama, Kingdom of Bahrain",
     map: MAP_EMBED_URL,
   },
 };
@@ -360,7 +360,7 @@ const ContactClient = ({ pageData = null }) => {
         {/* Map Section */}
         <section className={Style.mapSection} data-animation="opacity">
           <iframe
-            src={STATIC_OFFICES["dubai-uae"].map}
+            src={STATIC_OFFICES["manama-bahrain"].map}
             width="100%"
             height="100%"
             style={{ border: 0, display: "block" }}
