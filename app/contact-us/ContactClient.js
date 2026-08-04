@@ -7,13 +7,13 @@ import { Icon } from "@iconify/react";
 import { sanitizeHtml, isEmptyHtml } from "../lib/sanitizeHtml";
 
 // Hardcoded Google Maps embed URL
-const MAP_EMBED_URL = "https://www.google.com/maps?q=Manama%2C%20Bahrain&output=embed";
+const MAP_EMBED_URL = "https://www.google.com/maps?q=Bahrain%20Financial%20Harbour%2C%20Harbour%20Tower%20East%2C%20Manama%2C%20Bahrain&output=embed";
 
 // Static office data
 const STATIC_OFFICES = {
   "manama-bahrain": {
     name: "Manama, Bahrain",
-    address: "Manama, Kingdom of Bahrain",
+    address: "Harbour Tower East, Bahrain Financial Harbour, Manama, Kingdom of Bahrain",
     map: MAP_EMBED_URL,
   },
 };
