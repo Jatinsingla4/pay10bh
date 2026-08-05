@@ -460,7 +460,7 @@ const ContactClient = ({ pageData = null }) => {
                     <input
                       type="tel"
                       name="mobile"
-                      placeholder="+971501234567"
+                      placeholder="+97312345678"
                       className={`${Style.formInput} ${formErrors.mobile ? Style.formInputError : ""}`}
                       value={formData.mobile}
                       onChange={handleInputChange}
