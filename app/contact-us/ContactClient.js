@@ -124,7 +124,7 @@ const ContactClient = ({ pageData = null }) => {
       email: formData.email.trim(),
       phone: mobileValue.trim(),
       company: activeFormType !== "Channel Partner" ? formData.company_name.trim() : "",
-      message: formData.message?.trim() || "",
+      message: formData.message?.trim() || `${activeFormType} inquiry submitted via contact form.`,
       type: activeFormType.toLowerCase(),
     };
 
